@@ -13,9 +13,10 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" /> </head>
 
 <body>
+    <!--
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('img/logo/logo.png') }}" alt="logo-elesud" width="300px"></a>
+            <a class="navbar-brand" href="{{ url('/') }}"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 39.237 26.166">
                     <g>
@@ -37,10 +38,16 @@
                 </ul>
             </div>
         </div>
-    </nav> @yield('content')
+        </nav>
+-->
+    <div class="row p-2 m-0">
+        <div id="sidebar" class="col-xl-2">
+            <div class="logo"> <img class="w-100" src="{{ asset('img/logo/logo.png') }}" alt="logo-elesud"> </div>
+        </div> @yield('content') </div>
     <footer> </footer>
     <script src="{{ asset('js/jquery-3.3.1.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/wow.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
