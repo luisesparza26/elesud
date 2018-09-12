@@ -1,3 +1,3 @@
-#sidebar {
-    position: fixed;
+#sticky-sidebar {
+    min-height: 100vh;
 }

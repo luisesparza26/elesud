@@ -13,41 +13,28 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" /> </head>
 
 <body>
-    <!--
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 39.237 26.166">
-                    <g>
-                        <path d="M0,26.166h39.237v-4.365H0V26.166z M0,15.265h39.237V10.9H0V15.265z M0,0v4.366h39.237V0H0z M0,0" /> </g>
-                </svg>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="{{ url('/') }}">Inicio</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="{{ url('#') }}">Nosotros</a> </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="productosLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
-                        <div class="dropdown-menu" aria-labelledby="productosLink"> <a class="dropdown-item" href="{{ url('#') }}">Mantenimiento Preventivo</a> <a class="dropdown-item" href="{{ url('#') }}">Mantenimiento Correctivo</a> </div>
+    <div class="row m-0">
+        <div class="col-md-3 px-1" id="sticky-sidebar">
+            <div class="py-2 sticky-top">
+                <div class="logo"> <img class="w-100" src="{{ asset('img/logo/logo.png') }}" alt="logo-elesud"> </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item"> <a class="nav-link active" href="#">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Nosotros</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Productos</a> </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                        <div class="dropdown-menu"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> </div>
                     </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="serviciosLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
-                        <div class="dropdown-menu" aria-labelledby="serviciosLink"> <a class="dropdown-item" href="{{ url('#') }}">Mantenimiento Preventivo</a> <a class="dropdown-item" href="{{ url('#') }}">Mantenimiento Correctivo</a> </div>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="{{ url('#') }}">Proyectos</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="{{ url('#') }}">Contacto</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Proyectos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Contácto</a> </li>
                 </ul>
             </div>
+            <footer class="fixed-bottom">
+                <h1>footer</h1> </footer>
         </div>
-        </nav>
--->
-    <div class="row p-2 m-0">
-        <div id="sidebar" class="col-xl-2">
-            <div class="logo"> <img class="w-100" src="{{ asset('img/logo/logo.png') }}" alt="logo-elesud"> </div>
-        </div> @yield('content') </div>
-    <footer> </footer>
-    <script src="{{ asset('js/jquery-3.3.1.js') }}"></script>
+        <div class="col-md-9" id="main"> @yield('content') </div>
+    </div>
+    <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/wow.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
