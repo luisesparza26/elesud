@@ -30,48 +30,45 @@
 								<div class="col-md-3">
 									<ul class="nav flex-column">
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Silla Salaescaleras</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Silla Recta</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
+											<a class="nav-link" href="#">Silla Curva</a>
 										</li>
 									</ul>
 								</div>
 								<div class="col-md-3">
 									<ul class="nav flex-column">
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Plataforma Delta</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
+											<a class="nav-link" href="#">Plataforma Stratos</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
+											<a class="nav-link" href="#">Plataforma Omega</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Plataforma Vertical</a>
 										</li>
 									</ul>
 								</div>
 								<div class="col-md-3">
 									<ul class="nav flex-column">
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Elevador de pasajeros</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
+											<a class="nav-link" href="#">Elevador de autos</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
+											<a class="nav-link" href="#">Elevador para hospitales</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Elevador de carga</a>
 										</li>
 									</ul>
 								</div>
@@ -146,83 +143,54 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-4">
-									<ul class="nav flex-column">
-										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-									</ul>
-								</div>
-								<!-- /.col-md-4  -->
-								<div class="col-md-4">
-									<ul class="nav flex-column">
-										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-									</ul>
-								</div>
-								<!-- /.col-md-4  -->
-								<div class="col-md-4">
-								</div>
-								<!-- /.col-md-4  -->
-							</div>
-						</div>
-						<!--  /.container  -->
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Matenimiento Preventivo</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Matenimiento Correctivo</a>
+							</li>
+						</ul>
 					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category 3</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-4">
-									<ul class="nav flex-column">
-										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-									</ul>
-								</div>
-								<!-- /.col-md-4  -->
-								<div class="col-md-4">
-									<ul class="nav flex-column">
-										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-									</ul>
-								</div>
-								<!-- /.col-md-4  -->
-								<div class="col-md-4">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category 3</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-4">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="#">Active</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Link item</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Link item</a>
+											</li>
+										</ul>
+									</div>
+									<!-- /.col-md-4  -->
+									<div class="col-md-4">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="#">Active</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Link item</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Link item</a>
+											</li>
+										</ul>
+									</div>
+									<!-- /.col-md-4  -->
+									<div class="col-md-4">
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</li>
+					</li>
 			</ul>
 		</div>
 	</nav>
