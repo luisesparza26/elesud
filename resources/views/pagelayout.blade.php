@@ -54,6 +54,9 @@
 										<li class="nav-item">
 											<a class="nav-link" href="#">Plataforma Vertical</a>
 										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Escaleras Cremallera Piñón</a>
+										</li>
 									</ul>
 								</div>
 								<div class="col-md-3">
@@ -70,21 +73,27 @@
 										<li class="nav-item">
 											<a class="nav-link" href="#">Elevador de carga</a>
 										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Ascensores Antiexplosivos</a>
+										</li>
 									</ul>
 								</div>
 								<div class="col-md-3">
 									<ul class="nav flex-column">
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Escaleras Eléctricas</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
+											<a class="nav-link" href="#">Escaleras Mecánicas</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
+											<a class="nav-link" href="#">Pasillos Mecánicos</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
+											<a class="nav-link" href="#">Veredas Mecánicas</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Ascensores con protección IP</a>
 										</li>
 									</ul>
 								</div>
@@ -92,53 +101,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category 2</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-4">
-									<ul class="nav flex-column">
-										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-4">
-									<ul class="nav flex-column">
-										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-4">
-									<ul class="nav flex-column">
-										<li class="nav-item">
-											<a class="nav-link" href="#">Active</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Link item</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
+				<li class="nav-item"><a class="nav-link" href="#">Proyectos</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>

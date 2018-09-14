@@ -12,8 +12,10 @@
 */
 
 //Rutas Principales
-Route::get('/', 'App\Http\Controllers\PageController@inicio');
-Route::get('/nosotros', 'App\Http\Controllers\PageController@nosotros');
+Route::get('/',function()
+		   {return view('inicio');
+		   });
+/*Route::get('/nosotros', 'App\Http\Controllers\PageController@nosotros');
 Route::get('/marcas', 'App\Http\Controllers\PageController@marcas');
 Route::get('/accesibilidad', 'App\Http\Controllers\PageController@accesibilidad');
 Route::get('/productos', 'App\Http\Controllers\PageController@productos');
@@ -61,7 +63,7 @@ Route::get('/silla-salvaescaleras', 'App\Http\Controllers\PageController@inicio'
 //Rutas Marcas
 Route::get('/s3-sa-s', 'App\Http\Controllers\PageController@inicio');
 Route::get('/stairmax', 'App\Http\Controllers\PageController@inicio');
-
+*/
 
 
 
