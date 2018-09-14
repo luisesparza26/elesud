@@ -1,8 +1,10 @@
 #sticky-sidebar {
-    min-height: 100vh;
+	min-height: 100vh;
 }
-
-#drop{
+#drop {
 	position: static !important;
 	transform: translate3d(1px, 0px, 0px) !important;
+}
+.dropdown:hover>.dropdown-menu {
+	display: block;
 }
