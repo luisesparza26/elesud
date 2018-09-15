@@ -124,7 +124,7 @@ ol {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #263238;
+	background-color: #BCD0D9;
 	z-index: 0;
 	transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
 }
