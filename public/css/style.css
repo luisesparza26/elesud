@@ -159,7 +159,7 @@ ol {
 #contenedor .Slide:nth-child(even) .content .block {
 	color: #717171;
 }
-#Slide2 .content {
+/*#Slide2 .content {
 	overflow : hidden; 
 	overflow-y : scroll;
-}
+}*/
