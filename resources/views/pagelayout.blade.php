@@ -13,9 +13,9 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
 
 <body>
-	<nav class="navbar sticky-top navbar-light bg-light">
-		<a class="navbar-brand" href="#"><img src="{{ asset('img/logo/logo.png') }}" alt="logo" width="300"></a>
-	</nav>
+	<nav id="menu" class="navbar  fixed-top navbar-light bg-transparent">
+  <a class="navbar-brand" href="#"><img src="{{ asset('img/logo/logo2.png') }}" alt="logo"></a>
+</nav>
 	@yield('content')
 	<script src="{{ asset('js/jquery.js') }}"></script>
 	<script src="{{ asset('js/app.js') }}"></script>

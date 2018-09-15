@@ -4250,8 +4250,6 @@ input[type="button"].btn-block {
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
 }
 
 .navbar-toggler:hover,
@@ -4515,8 +4513,8 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.1);
+	outline: none;
+    color: #000;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -4647,7 +4645,6 @@ input[type="button"].btn-block {
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header:first-child {
