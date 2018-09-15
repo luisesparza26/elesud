@@ -11,10 +11,18 @@
 			<div class="labels">
 				<label class="Slide m-0" for="Slide1" id="Slide1">
 					<video autoplay="autoplay" loop="loop" id="video-background" preload="auto" volume="50"/><source src="{{ asset('img/index/home-vd.mp4') }}" type="video/mp4" /></video/>
-					<div class="bg-overlay"></div>
-					<div class="content">
+					<div class="bg-overlay">
+						<div class="content mx-auto text-center text-white" style="margin-top:15%;">
+						<div class="container align-middle">
+							<h1>Bienvenido</h1>
+						<h3 style="font-size: 3rem;" class="mt-3">Elevadores Sudamericanos</h3>
+						<p >Somos una empresa peruana con amplia experiencia en brindar soluciones de transporte vertical de todo tipo, a un precio económico, con calidad y cumpliendo su exigente cronograma.</p>
+						</div>
+						
 						
 					</div>
+					</div>
+					
 				</label>
 				<label class="Slide m-0" for="Slide2" id="Slide2">
 					<div class="container p-5">
