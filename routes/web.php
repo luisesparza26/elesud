@@ -12,55 +12,53 @@
 */
 
 //Rutas Principales
-Route::get('/', 'App\Http\Controllers\PageController@inicio');
-Route::get('/nosotros', 'App\Http\Controllers\PageController@nosotros');
-Route::get('/marcas', 'App\Http\Controllers\PageController@marcas');
-Route::get('/accesibilidad', 'App\Http\Controllers\PageController@accesibilidad');
-Route::get('/productos', 'App\Http\Controllers\PageController@productos');
-Route::get('/proyectos', 'App\Http\Controllers\PageController@proyectos');
-Route::get('/servicios', 'App\Http\Controllers\PageController@servicios');
+Route::get('/', 'Web\PageController@inicio');
+Route::get('/nosotros', 'Web\PageController@nosotros');
+Route::get('/marcas', 'Web\PageController@marcas');
+Route::get('/accesibilidad', 'Web\PageController@accesibilidad');
+Route::get('/productos', 'Web\PageController@productos');
+Route::get('/proyectos', 'Web\PageController@proyectos');
+Route::get('/servicios', 'Web\PageController@servicios');
 
 //Rutas Ascensores
-Route::get('/ascensores-alta-proteccion', 'App\Http\Controllers\PageController@inicio');
-Route::get('/ascensores-especiales', 'App\Http\Controllers\PageController@inicio');
-Route::get('/ascensores-industriales', 'App\Http\Controllers\PageController@inicio');
-Route::get('/ascensores-para-explosivos', 'App\Http\Controllers\PageController@inicio');
-Route::get('/ascensores-y-escaleras', 'App\Http\Controllers\PageController@inicio');
+Route::get('/ascensores-alta-proteccion', 'Web\AscensoresController@ascensores_alta_proteccion');
+Route::get('/ascensores-especiales', 'Web\AscensoresController@ascensores_especiales');
+Route::get('/ascensores-industriales', 'Web\AscensoresController@ascensores_industriales');
+Route::get('/ascensores-para-explosivos', 'Web\AscensoresController@ascensores_para_explosivos');
+Route::get('/ascensores-y-escaleras', 'Web\AscensoresController@ascensores_escaleras');
 
 //Rutas Elevadores
-Route::get('/elevador-autos', 'App\Http\Controllers\PageController@inicio');
-Route::get('/elevador-carga', 'App\Http\Controllers\PageController@inicio');
-Route::get('/elevador-pasajeros', 'App\Http\Controllers\PageController@inicio');
-Route::get('/elevador-hidraulico', 'App\Http\Controllers\PageController@inicio');
-Route::get('/elevador-hospitales', 'App\Http\Controllers\PageController@inicio');
-Route::get('/elevador-piscina', 'App\Http\Controllers\PageController@inicio');
-Route::get('/elevador-cremallera', 'App\Http\Controllers\PageController@inicio');
+Route::get('/elevador-autos', 'Web\ElevadoresController@elevador_autos');
+Route::get('/elevador-carga', 'Web\ElevadoresController@elevador_carga');
+Route::get('/elevador-pasajeros', 'Web\ElevadoresController@elevador_pasajeros');
+Route::get('/elevador-hidraulico', 'Web\ElevadoresController@elevador_hidraulico');
+Route::get('/elevador-hospitales', 'Web\ElevadoresController@elevador_hospitales');
+Route::get('/elevador-piscina', 'Web\ElevadoresController@elevador_piscina');
+Route::get('/elevador-cremallera', 'Web\ElevadoresController@elevador_cremallera');
 
 //Rutas Escaleras
-Route::get('/escaleras-electricas', 'App\Http\Controllers\PageController@inicio');
-Route::get('/escaleras-mecanicas', 'App\Http\Controllers\PageController@inicio');
-Route::get('/escaleras-publicas', 'App\Http\Controllers\PageController@inicio');
+Route::get('/escaleras-electricas', 'Web\EscalerasController@escaleras_electricas');
+Route::get('/escaleras-mecanicas', 'Web\EscalerasController@escaleras_mecanicas');
+Route::get('/escaleras-publicas', 'Web\EscalerasController@escaleras_publicas');
 
 //Rutas Orugas
-Route::get('/orugas', 'App\Http\Controllers\PageController@inicio');
+Route::get('/orugas', 'Web\OrugasController@orugas');
 
 //Rutas Plataformas
-Route::get('/plataforma-delta', 'App\Http\Controllers\PageController@inicio');
-Route::get('/plataforma-omega', 'App\Http\Controllers\PageController@inicio');
-Route::get('/plataforma-salvaescaleras', 'App\Http\Controllers\PageController@inicio');
-Route::get('/platadorma-stratos', 'App\Http\Controllers\PageController@inicio');
-Route::get('/plataformas-verticales', 'App\Http\Controllers\PageController@inicio');
-
-
+Route::get('/plataforma-delta', 'Web\PlataformasController@plataforma_delta');
+Route::get('/plataforma-omega', 'Web\PlataformasController@plataforma_omega');
+Route::get('/plataforma-salvaescaleras', 'Web\PlataformasController@plataforma_salvaescaleras');
+Route::get('/plataforma-stratos', 'Web\PlataformasController@plataforma_stratos');
+Route::get('/plataformas-verticales', 'Web\PlataformasController@plataformas_verticales');
 
 //Rutas Sillas
-Route::get('/silla-curva', 'App\Http\Controllers\PageController@inicio');
-Route::get('/silla-recta', 'App\Http\Controllers\PageController@inicio');
-Route::get('/silla-salvaescaleras', 'App\Http\Controllers\PageController@inicio');
+Route::get('/silla-curva', 'Web\PageController@inicio');
+Route::get('/silla-recta', 'Web\PageController@inicio');
+Route::get('/silla-salvaescaleras', 'Web\PageController@inicio');
 
 //Rutas Marcas
-Route::get('/s3-sa-s', 'App\Http\Controllers\PageController@inicio');
-Route::get('/stairmax', 'App\Http\Controllers\PageController@inicio');
+Route::get('/sa3-sa-s', 'Web\PageController@inicio');
+Route::get('/stairmax', 'Web\PageController@inicio');
 
 
 
