@@ -133,9 +133,9 @@ ol {
 	color: white !important;
 }
 #contenedor .content {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0 110px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 4rem;
 }
 #contenedor .content .block {
 	width: inherit;
@@ -175,6 +175,7 @@ ol {
 	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 0.5rem;
+	margin-top: 50px;
 }
 #container-products .products-card {
 	margin: 0.5rem;
@@ -268,7 +269,7 @@ ol {
 
 @media (min-width: 900px) {
 #container-products .products-card {
-	height: 20rem
+	height: 17rem
 }
 }
 
