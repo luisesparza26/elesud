@@ -124,7 +124,7 @@ ol {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #263238;
+	background-color: #BCD0D9;
 	z-index: 0;
 	transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
 }
@@ -135,12 +135,12 @@ ol {
 #contenedor .content {
     width: 100%;
     box-sizing: border-box;
+	margin-top: 50px;
 }
 #contenedor .content .block {
 	width: inherit;
 	font-weight: 400;
 	line-height: 1.5;
-	margin: 42px 0;
 	display: flex;
 	justify-content: center;
 }
@@ -154,12 +154,12 @@ ol {
 	font-size: 30px;
 }
 #contenedor .Slide:nth-child(even) .content .block {
-	color: #717171;
+	color: #FFF;
 }
-#Slide3 .content {
+/*#Slide3 .content {
 	overflow : hidden; 
 	overflow-y : scroll;
-}
+}*/
 #container-products {
 	margin: 0 auto;
 	max-width: 1100px;
@@ -174,14 +174,13 @@ ol {
 	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 0.5rem;
-	margin-top: 50px;
 }
 #container-products .products-card {
 	margin: 0.5rem;
 	position: relative;
 	height: 12.5rem;
 	overflow: hidden;
-	border-radius: 0.5rem;
+	border-radius: .5rem;
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;

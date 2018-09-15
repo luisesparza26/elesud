@@ -1,6 +1,7 @@
 @extends( 'pagelayout' )@section( 'content' )
 
 
+
 <div class="row mt-5">
   <div class="col-3">
     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -15,7 +16,8 @@
       <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
       	<div id="section1" class="container-fluid">
 	<div class="content">
-						<h1></h1>
+						<h1>Productos</h1>
+
 						<div class="block">
 							<div id="container-products" class="row">
 								<div class="products-card">
