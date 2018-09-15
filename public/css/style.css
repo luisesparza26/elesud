@@ -180,13 +180,17 @@ p {
 	background-size: cover;
 }
 #Slide5 {
-	background-color: #686868;
+	background-image: url(../img/brands/marcas-background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000;
 }
 #Slide6 {
-	background-color: #3B3B3B;
+	background-color: #000;
 }
 #Slide7 {
-	background-color: #393737;
+	background-color: #000;
 }
 @media (max-width: 650px) {
 #menu .navbar-brand img {
@@ -223,4 +227,8 @@ p {
 #contenedor .mision-vision p,
 #contenedor .mantenimientos p{
 	color: #777777;
+}
+
+.brands{
+	background:rgba(0,0,0,0.3);
 }
