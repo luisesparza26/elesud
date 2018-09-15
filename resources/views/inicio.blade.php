@@ -22,7 +22,6 @@
 				</label>
 				<label class="Slide" for="Slide3" id="Slide3">
 					<div class="content">
-						<h1></h1>
 						<div class="block">
 							<div id="container-products" class="row">
 								<div class="products-card">
