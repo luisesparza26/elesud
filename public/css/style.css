@@ -1,69 +1,165 @@
-
-html {
-	height: 100%;
+@font-face {
+	font-family: 'digital-clock-font';
+	src: url(../fonts/digital.ttf);
 }
 body {
-	background-color: #fff;
-	max-width: 1700px;
-	margin: auto !important;
-	padding: 0;
-	-webkit-box-sizing: border-box;
+	font-weight: 100;
+}
+h1 {
+	text-transform: uppercase;
+	color: #FFF;
+}
+ol {
+	text-align: left;
+	list-style-type: decimal;
+}
+#contenedor {
+	width: 100vw;
+	height: 100vh;
+	background: #2B2B38;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+#contenedor form {
 	box-sizing: border-box;
-	height: 100%;
+	text-align: center;
+	padding: 22px;
+	display: inline-flex;
+	flex-direction: column;
+	position: fixed;
+	height: 100vh;
+	justify-content: center;
 }
-
-
-
-
-/* adds some margin below the link sets  */
-.navbar .dropdown-menu div[class*="col"] {
-   margin-bottom:1rem;
+#contenedor form input {
+	height: 0;
+	margin: 20px 0;
+	z-index: 1;
 }
-
-.navbar .dropdown-menu {
-  border:none;
-  background-color:#0060c8!important;
+#contenedor form input:checked {
+	outline: 0;
+	border: 0;
 }
-
-/* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 992px) {
-  
-  /* remove the padding from the navbar so the dropdown hover state is not broken */
-.navbar {
-  padding-top:0px;
-  padding-bottom:0px;
+#contenedor form input:before {
+	content: "" attr(numero)"";
+	font-family: 'digital-clock-font';
+	font-weight: bold;
+	letter-spacing: 2px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	padding: 5px;
+	height: 30px;
+	background-color: #000;
+	color: #009015;
+	border-radius: 10%;
+	cursor: pointer;
+	transition: all 0.25s linear;
 }
-
-/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-.navbar .nav-item {
-  padding:.5rem .5rem;
-  margin:0 .25rem;
+#contenedor form input:checked:before {
+	background-color: #FFF;
 }
-
-/* makes the dropdown full width  */
-.navbar .dropdown {position:static;}
-
-.navbar .dropdown-menu {
-  width:100%;
-  left:0;
-  right:0;
-/*  height of nav-item  */
-  top:67px;
+#contenedor form input:after {
+	content: "" attr(titulo) "";
+	font-family: 'digital-clock-font';
+	letter-spacing: 2px;
+	position: relative;
+	left: 30px;
+	opacity: 0;
+	font-size: 1.2rem;
+	color: #FFF;
+	display: block;
+	min-width: 80px;
+	transition: all 0.25s linear;
 }
-  
- 
-
-  
-  /* shows the dropdown menu on hover */
-.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-  display:block!important;
+#contenedor form input:checked:after {
+	opacity: 1;
+	left: 40px;
 }
-  
-  .navbar .dropdown-menu {
-    border: 1px solid rgba(0,0,0,.15);
-    background-color: #fff;
-  }
-
+#contenedor form input:hover:after:not(label) {
+ opacity: 1;
 }
-
-
+#contenedor form input:nth-of-type(1):checked ~ .labels label {
+	-webkit-transform: translateY(-0%);
+	transform: translateY(-0%);
+}
+#contenedor form input:nth-of-type(2):checked ~ .labels label {
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+#contenedor form input:nth-of-type(3):checked ~ .labels label {
+	-webkit-transform: translateY(-200%);
+	transform: translateY(-200%);
+}
+#contenedor form input:nth-of-type(4):checked ~ .labels label {
+	-webkit-transform: translateY(-300%);
+	transform: translateY(-300%);
+}
+#contenedor form input:nth-of-type(5):checked ~ .labels label {
+	-webkit-transform: translateY(-400%);
+	transform: translateY(-400%);
+}
+#contenedor form input:nth-of-type(6):checked ~ .labels label {
+	-webkit-transform: translateY(-500%);
+	transform: translateY(-500%);
+}
+#contenedor form input:nth-of-type(7):checked ~ .labels label {
+	-webkit-transform: translateY(-600%);
+	transform: translateY(-600%);
+}
+#contenedor form .labels {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+#contenedor form .labels label {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #2B2B38;
+	z-index: 0;
+	transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
+}
+#contenedor form .labels label:nth-child(odd) {
+	background-color: #777777;
+	color: white !important;
+}
+#contenedor .content {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 110px;
+}
+#contenedor .content .block {
+	width: inherit;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 42px 0;
+	display: flex;
+	justify-content: center;
+}
+#contenedor .content .block span, .content .block span i {
+	margin: 0 42px;
+}
+#contenedor .content .block span i {
+	margin-bottom: 22px;
+}
+#contenedor .content .block span i:before {
+	font-size: 30px;
+}
+#contenedor .Slide:nth-child(even) .content .block {
+	color: #717171;
+}
+/*#Slide2 .content {
+	overflow : hidden; 
+	overflow-y : scroll;
+}*/

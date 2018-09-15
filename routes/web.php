@@ -20,6 +20,7 @@ Route::get('/productos', 'Web\PageController@productos');
 Route::get('/proyectos', 'Web\PageController@proyectos');
 Route::get('/servicios', 'Web\PageController@servicios');
 
+
 //Rutas Ascensores
 Route::get('/ascensores-alta-proteccion', 'Web\AscensoresController@ascensores_alta_proteccion');
 Route::get('/ascensores-especiales', 'Web\AscensoresController@ascensores_especiales');
@@ -59,6 +60,7 @@ Route::get('/silla-salvaescaleras', 'Web\PageController@inicio');
 //Rutas Marcas
 Route::get('/sa3-sa-s', 'Web\PageController@inicio');
 Route::get('/stairmax', 'Web\PageController@inicio');
+
 
 
 
