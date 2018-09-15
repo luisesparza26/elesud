@@ -13,9 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-light bg-light">
+	<nav class="navbar sticky-top navbar-light bg-light">
 		<a class="navbar-brand" href="#"><img src="{{ asset('img/logo/logo.png') }}" alt="logo" width="300"></a>
-		</div>
 	</nav>
 	@yield('content')
 	<script src="{{ asset('js/jquery.js') }}"></script>
