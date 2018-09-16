@@ -5,7 +5,7 @@
 			<input type="radio" id="Slide2" name="slider" numero="05" titulo="Nosotros"/>
 			<input type="radio" id="Slide3" name="slider" numero="04" titulo="Productos"/>
 			<input type="radio" id="Slide4" name="slider" numero="03" titulo="Servicios"/>
-			<input type="radio" id="Slide5" name="slider" numero="02" titulo="Marcas"/>
+			<input type="radio" id="Slide5" name="slider" numero="02" titulo="Representaciones"/>
 			<input type="radio" id="Slide6" name="slider" numero="01" titulo="Proyectos"/>
 			<input type="radio" id="Slide7" name="slider" numero="S1" titulo="Contacto"/>
 			<div class="labels">
@@ -121,18 +121,18 @@
 				</label>
 				<label class="Slide m-0" for="Slide5" id="Slide5">
 					<div class="container p-5">
-						<div class="brands">
-							<h2>Trabajamos con las mejores marcas</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veniam velit consequuntur repellendus cumque molestias sequi in nulla illo eius, voluptate deleniti quo quisquam voluptas. Velit tempora aut officia consectetur!</p>
+						<div class="brands p-5">
+							<h2>Representamos a las mejores marcas del mundo.</h2>
+							<p>Somos una empresa 100% peruana especialista en trasporte vertical y con más de 15 años de experiencia en el rubro, lo cual nos ha permitido seleccionar a las mejores marcas para cada aplicación a nivel mundial.</p>
 							<div class="row align-items-center py-5">
 								<div class="col-lg-4">
-									<img class="w-100" src="{{ asset('img/brands/alimak.png') }}" alt="brand">
+									<img class="w-100" src="{{ asset('img/brands/koyo.png') }}" alt="brand">
 								</div>
 								<div class="col-lg-4">
 									<img class="w-100" src="{{ asset('img/brands/lehner.png') }}" alt="brand">
 								</div>
 								<div class="col-lg-4">
-									<img class="w-100" src="{{ asset('img/brands/koyo.png') }}" alt="brand">
+									<img class="w-100" src="{{ asset('img/brands/alimak.png') }}" alt="brand">
 								</div>
 							</div>
 						</div>
