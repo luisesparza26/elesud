@@ -17,9 +17,16 @@
 				<video autoplay loop muted>
 					<source src="{{ asset('img/index/home.mp4') }}">
 				</video>
-				<div class="home-content">
-					<h1>hola</h1>
-				</div>
+					<div class="home-content text-center" >
+						<div class="container align-self-center">
+							<img src="{{ asset('img/logo/logo2.png') }}" alt="logo" class="responsive-image" width="50%">
+						<h1 class="text-white mb-5 mt-5">Elevadores Sudamericanos</h1>
+						<div class="container text-center text-white">
+							<p style="font-size: 1.3rem;" class="text-center">Somos una empresa peruana con amplia experiencia en brindar soluciones de transporte vertical de todo tipo, a un precio económico, con calidad y cumpliendo su exigente cronograma.</p>
+						</div>
+						</div>
+						
+					</div>
 			</div>
 		</section>
 		<section id="about" class="section-index">
@@ -58,7 +65,120 @@
 		<section id="services" class="section-index"></section>
 		<section id="brands" class="section-index"></section>
 		<section id="projects" class="section-index"></section>
-		<section id="contact" class="section-index"></section>
+		<section id="contact" class="section-index">
+			<div class="container">
+				<div class="bg-black">
+					
+				
+				<h2 class="text-white py-5 text-center" style="margin:0px;">Contáctanos</h2>
+    <div class="row">
+
+        <div class="col-md-6 mt-5">
+            <div class="well well-sm">
+                <form class="" method="post">
+                    <fieldset>
+                        <div class="form-group">
+                            <div class="col-md-10 offset-md-1">
+                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10 offset-md-1">
+                                <input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 offset-md-1">
+                                <input id="email" name="email" type="text" placeholder="Correo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 offset-md-1">
+                                <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 offset-md-1">
+                                <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-xs-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 mt-5">
+            <div>
+                <div class="card ">
+                    <div class="text-xs-center header">Nuestra ubicación.</div>
+                    <div class="card-block text-xs-center">
+                        <h4>Dirección:</h4>
+                        <div>
+                        2217 Washington Blvd<br />
+                        Washington DC<br />
+                        #(703) 1234 1234<br />
+                        service@company.com<br />
+                        </div>
+                        <hr />
+                        <div id="map1" class="map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript">
+    $.('document').ready(function ($) {
+        function init_map1() {
+            var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
+            var mapOptions = {
+                center: myLocation,
+                zoom: 16
+            };
+            var marker = new google.maps.Marker({
+                position: myLocation,
+                title: "Property Location"
+            });
+            var map = new google.maps.Map(document.getElementById("map1"),
+                mapOptions);
+            marker.setMap(map);
+        }
+        init_map1();
+    });
+</script>
+
+<style>
+    .map {
+        min-width: 300px;
+        min-height: 300px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        background-color: #F5F5F5;
+        color: #36A0FF;
+        height: 70px;
+        font-size: 27px;
+        padding: 10px;
+    }
+</style>
+
+		</section>
 	</div>
 <!--	<section id="index" class="row">
 
