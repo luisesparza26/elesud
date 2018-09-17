@@ -1,7 +1,7 @@
 @extends( 'pagelayout' )@section( 'content' )
 	<section id="index" class="row">
 		<div class="col-lg-2 p-0 btn-elesud">
-			<div class="mobile-menu nav  flex-column text-right">
+			<div class="nav  flex-column text-right">
 				<a class="nav-link js-scroll-trigger" href="#home">Inicio</a>
 				<a class="nav-link js-scroll-trigger" href="#about">Nosotros</a>
 				<a class="nav-link js-scroll-trigger" href="#products">Productos</a>
