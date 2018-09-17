@@ -70,7 +70,7 @@ p {
 	font-family: 'Quicksand', sans-serif;
 }
 #index .nav .js-scroll-trigger {
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 400;
 	font-family: 'Quicksand', sans-serif;
 	display: flex;
@@ -81,7 +81,7 @@ p {
 	margin-left: 50px;
 }
 #index .nav .js-scroll-trigger:hover {
-	color: #000;
+	color: #c0bfba;
 	transition: .5s;
 }
 #index .nav .js-scroll-trigger::before {
