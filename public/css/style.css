@@ -104,22 +104,33 @@ p {
 #index .btn-elesud {
 	position: fixed;
 	min-height: 100vh;
-	background: #000000; 
+	background: #000000;
 	background: -webkit-linear-gradient(to bottom, #343a40, #000000);
 	background: linear-gradient(to bottom, #343a40, #000000);
 }
 #index .index-content {
 	margin-left: 16.666667%;
 }
-@media (max-width: 540px){
-	#menu {
-		height: 5rem;
-		padding: 0 .5rem;
-	}
-	#menu .navbar-brand img {
+
+@media (max-width: 380px) {
+#menu .navbar-brand {
+	margin-right: .5rem;
+}
+#menu .navbar-brand img {
+	width: 200px !important;
+}
+}
+
+@media (max-width: 540px) {
+#menu {
+	height: 5rem;
+	padding: 0 .5rem;
+}
+#menu .navbar-brand img {
 	width: 250px;
 }
 }
+
 @media (max-width: 991px) {
 #menu .menu {
 	display: block;
