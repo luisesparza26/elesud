@@ -10,13 +10,15 @@
 	<meta name="author" content="Quickly"/>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
+	<link rel="stylesheet" href="{{asset('css/animate.css')}}" type="text/css">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="menu">
 		<a class="navbar-brand js-scroll-trigger" href="#home"><img src="{{ asset('img/logo/logo2.png') }}" alt="logo"></a>
 		<button class="menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-			<div><span class="line"></span><span class="line"></span><span class="line"></span></div>
+			<div><span class="line"></span><span class="line"></span><span class="line"></span>
+			</div>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
@@ -50,6 +52,9 @@
 	<script src="{{ asset('js/main.js') }}"></script>
 	<script src="{{ asset('js/app.js') }}"></script>
 	<script src="{{ asset('js/wow.js') }}"></script>
+	<script>
+		new WOW().init();
+	</script>
 
 </body>
 

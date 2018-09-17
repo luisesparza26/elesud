@@ -25,3 +25,34 @@ $(document).ready(function () {
 		$('.navbar-collapse').collapse('hide');
 	});
 })(jQuery);
+$(document).ready(function () {
+	'use strict';
+	$('#homebtn').click(function () {
+		var text = $(this).attr('value');
+		$("#panel").val(text);
+	});
+	$('#aboutbtn').click(function () {
+		var text = $(this).attr('value');
+		$("#panel").val(text);
+	});
+	$('#productsbtn').click(function () {
+		var text = $(this).attr('value');
+		$("#panel").val(text);
+	});
+	$('#servicesbtn').click(function () {
+		var text = $(this).attr('value');
+		$("#panel").val(text);
+	});
+	$('#brandsbtn').click(function () {
+		var text = $(this).attr('value');
+		$("#panel").val(text);
+	});
+	$('#projectsbtn').click(function () {
+		var text = $(this).attr('value');
+		$("#panel").val(text);
+	});
+	$('#contactbtn').click(function () {
+		var text = $(this).attr('value');
+		$("#panel").val(text);
+	});
+});
