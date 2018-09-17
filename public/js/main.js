@@ -2,7 +2,9 @@ $(document).ready(function () {
 	'use strict';
 	$('.menu').click(function () {
 		$(this).toggleClass('is-active');
-		$('.mobile-menu').toggle();
+	});
+	$('.nav-index').click(function () {
+		$('.menu').removeClass('is-active');
 	});
 });
 (function ($) {

@@ -13,41 +13,37 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
 
 <body>
-	    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="menu">
-        <a class="navbar-brand js-scroll-trigger" href="#home"><img src="{{ asset('img/logo/logo2.png') }}" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-         <div class="menu">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
-			</div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#home">Inicio</a>
-            </li>
-			  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Nosotros</a>
-            </li>
-			  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#products">Productos</a>
-            </li>
-			  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
-            </li>
-			  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#brands">Marcas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
-            </li>
-          </ul>
-      </div>
-    </nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="menu">
+		<a class="navbar-brand js-scroll-trigger" href="#home"><img src="{{ asset('img/logo/logo2.png') }}" alt="logo"></a>
+		<button class="menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<div><span class="line"></span><span class="line"></span><span class="line"></span></div>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger nav-index" href="#home">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger nav-index" href="#about">Nosotros</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger nav-index" href="#products">Productos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger nav-index" href="#services">Servicios</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger nav-index" href="#brands">Marcas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger nav-index" href="#projects">Proyectos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger nav-index" href="#contact">Contacto</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	@yield('content')
 	<script src="{{ asset('js/jquery.js') }}"></script>
 	<script src="{{ asset('js/scroll.js') }}"></script>

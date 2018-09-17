@@ -29,7 +29,7 @@ p {
 #menu .navbar-brand img {
 	width: 300px;
 }
-#menu .mobile-menu, #menu .menu {
+#menu .menu {
 	display: none;
 }
 #menu .menu .line {
@@ -56,71 +56,67 @@ p {
 #index {
 	margin: 4.6875rem auto 0;
 }
-#index .mobile-menu{
+#index .nav {
 	margin-top: 65%;
 }
-#index .nav-link{
-    padding: .3rem .5rem;
-    font-size: 1.1rem;
+#index .nav-link {
+	padding: .3rem .5rem;
+	font-size: 1.1rem;
 	letter-spacing: 1px;
-    font-family: 'digital-clock-font';
-    color: #0DD11D;
-    background-color: #000;
-    max-width: 90%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin: .4rem 2rem;
+	font-family: 'digital-clock-font';
+	color: #0DD11D;
+	background-color: #000;
+	max-width: 90%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin: .4rem 2rem;
 }
-
-#index .section-index{
+#index .section-index {
 	min-height: 100vh;
 }
-
-#index .section-index:nth-child(2){
+#index .section-index:nth-child(2) {
 	background-image: url(../img/index/home-img.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#index .section-index:nth-child(3){
+#index .section-index:nth-child(3) {
 	background-image: url(../img/index/nosotros-img.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#index .section-index:nth-child(4){
-background-image: url(../img/index/services.jpg);
+#index .section-index:nth-child(4) {
+	background-image: url(../img/index/services.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#index .section-index:nth-child(5){
+#index .section-index:nth-child(5) {
 	background-color: white;
 }
-#index .section-index:nth-child(6){
+#index .section-index:nth-child(6) {
 	background-color: white;
 }
-#index .section-index:nth-child(7){
+#index .section-index:nth-child(7) {
 	background-color: white;
 }
 #index .btn-elesud {
 	position: fixed;
 	min-height: 100vh;
-	background-image: url(../img/index/panel.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: #000000; 
+	background: -webkit-linear-gradient(to bottom, #343a40, #000000);
+	background: linear-gradient(to bottom, #343a40, #000000);
 }
 #index .index-content {
 	margin-left: 16.666667%;
 }
-
 @media (max-width: 991px) {
 #menu .menu {
 	display: block;
 	cursor: pointer;
 }
-#menu .mobile-menu,  #index .btn-elesud {
+#index .btn-elesud {
 	display: none;
 }
 #index .index-content {
