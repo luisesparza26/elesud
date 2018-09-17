@@ -4,10 +4,6 @@ $(document).ready(function () {
 		$(this).toggleClass('is-active');
 		$('.mobile-menu').toggle();
 	});
-	$('.nav-index').click(function () {
-		$('.mobile-menu').hide();
-		$('.menu').removeClass('is-active');
-	});
 });
 (function ($) {
 	"use strict";

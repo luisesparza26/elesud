@@ -4386,10 +4386,9 @@ input[type="button"].btn-block {
         flex-wrap: nowrap;
     }
     .navbar-expand-lg .navbar-collapse {
-        display: -ms-flexbox !important;
-        display: flex !important;
         -ms-flex-preferred-size: auto;
         flex-basis: auto;
+		display: none;
     }
     .navbar-expand-lg .navbar-toggler {
         display: none;
@@ -4563,6 +4562,8 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-toggler {
+	border: none;
+	outline: none;
     color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.1);
 }
