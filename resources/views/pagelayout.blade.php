@@ -13,13 +13,30 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
 
 <body>
-	<nav id="menu" class="navbar  fixed-top navbar-light bg-transparent">
-  <a class="navbar-brand" href="#"><img src="{{ asset('img/logo/logo2.png') }}" alt="logo"></a>
-</nav>
+	<header id="menu" class="fixed-top">
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#"><img src="{{ asset('img/logo/logo.png') }}" alt="logo"></a>
+			<div class="menu">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</nav>
+		<div class="mobile-menu nav  flex-column">
+			<a class="nav-link nav-index js-scroll-trigger" href="#home">Inicio</a>
+			<a class="nav-link nav-index js-scroll-trigger" href="#about">Nosotros</a>
+			<a class="nav-link nav-index js-scroll-trigger" href="#products">Productos</a>
+			<a class="nav-link nav-index js-scroll-trigger" href="#services">Servicios</a>
+			<a class="nav-link nav-index js-scroll-trigger" href="#brands">Marcas</a>
+			<a class="nav-link nav-index js-scroll-trigger" href="#projects">Proyectos</a>
+			<a class="nav-link nav-index js-scroll-trigger" href="#contact">Contacto</a>
+		</div>
+	</header>
 	@yield('content')
 	<script src="{{ asset('js/jquery.js') }}"></script>
-	<script src="{{ asset('js/app.js') }}"></script>
+	<script src="{{ asset('js/scroll.js') }}"></script>
 	<script src="{{ asset('js/main.js') }}"></script>
+	<script src="{{ asset('js/app.js') }}"></script>
 	<script src="{{ asset('js/wow.js') }}"></script>
 
 </body>

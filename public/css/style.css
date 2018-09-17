@@ -5,17 +5,13 @@
 	src: url(../fonts/digital.ttf);
 }
 body {
-	font-weight: 100;
 	box-sizing: border-box;
+	max-width: 1800px;
 	padding: 0;
-	margin:0;
-}
-#menu .navbar-brand img {
-	width: 300px;
+	margin: 0;
 }
 h1 {
 	text-transform: uppercase;
-	color: #FFF;
 }
 h2 {
 	font-size: 2.5rem;
@@ -27,208 +23,107 @@ ol {
 	list-style-type: decimal;
 }
 p {
-	color: #FFF;
 	font-size: 16px;
 	font-family: 'Quicksand', sans-serif;
-	
 }
-#contenedor {
-	width: 100vw;
-	height: 100vh;
-	background: #2B2B38;
-	position: relative;
-	display: flex;
-	align-items: center;
+#menu .navbar-brand img {
+	width: 300px;
 }
-#contenedor form {
-	padding: 5px;
-	display: inline-flex;
-	flex-direction: column;
-	position: fixed;
-	height: 100vh;
-	justify-content: center;
+#menu .mobile-menu, #menu .menu {
+	display: none;
 }
-#contenedor form input {
-	height: 0;
-	margin: 20px 0;
-	z-index: 1;
-}
-#contenedor form input:checked {
-	outline: 0;
-	border: 0;
-}
-#contenedor form input:before {
-	content: "" attr(numero)"";
-	font-family: 'digital-clock-font';
-	font-weight: bold;
-	letter-spacing: 2px;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 30px;
-	padding: 5px;
-	height: 30px;
-	background-color: #3d58a1;
-	color: #fff;
-	border-radius: 10%;
-	cursor: pointer;
-	transition: all 0.25s linear;
-}
-#contenedor form input:checked:before {
-	background-color: #fff;color: #3d58a1;
-}
-#contenedor form input:after {
-	content: "" attr(titulo) "";
-	font-family: 'digital-clock-font';
-	letter-spacing: 2px;
-	position: relative;
-	left: 30px;
-	opacity: 0;
-	font-size: 1.2rem;
-	color: #FFF;
+#menu .menu .line {
+	width: 35px;
+	height: 3px;
+	margin: 8px;
 	display: block;
-	min-width: 80px;
-	transition: all 0.25s linear;
+	background-color: #3d58a1;
+	transition: all .3s ease-in-out;
 }
-#contenedor form input:checked:after {
-	opacity: 1;
-	left: 40px;
+#menu .is-active .line:nth-child(1) {
+	transform: translateY(11px) rotate(45deg);
 }
-#contenedor form input:hover:after:not(label) {
- opacity: 1;
+#menu .is-active .line:nth-child(2) {
+	opacity: 0;
+	transform: translateX(40px) !important;
 }
-#contenedor form input:nth-of-type(1):checked ~ .labels label {
-	-webkit-transform: translateY(-0%);
-	transform: translateY(-0%);
+#menu .menu:hover .line:nth-child(2) {
+	transform: translateX(-5px);
 }
-#contenedor form input:nth-of-type(2):checked ~ .labels label {
-	-webkit-transform: translateY(-100%);
-	transform: translateY(-100%);
+#menu .is-active .line:nth-child(3) {
+	transform: translateY(-11px) rotate(-45deg);
 }
-#contenedor form input:nth-of-type(3):checked ~ .labels label {
-	-webkit-transform: translateY(-200%);
-	transform: translateY(-200%);
+#index {
+	margin: 4.6875rem auto 0;
 }
-#contenedor form input:nth-of-type(4):checked ~ .labels label {
-	-webkit-transform: translateY(-300%);
-	transform: translateY(-300%);
+#index .mobile-menu{
+	margin-top: 65%;
 }
-#contenedor form input:nth-of-type(5):checked ~ .labels label {
-	-webkit-transform: translateY(-400%);
-	transform: translateY(-400%);
+#index .nav-link{
+    padding: .3rem .5rem;
+    font-size: 1.1rem;
+	letter-spacing: 1px;
+    font-family: 'digital-clock-font';
+    color: #0DD11D;
+    background-color: #000;
+    max-width: 90%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: .4rem 2rem;
 }
-#contenedor form input:nth-of-type(6):checked ~ .labels label {
-	-webkit-transform: translateY(-500%);
-	transform: translateY(-500%);
-}
-#contenedor form input:nth-of-type(7):checked ~ .labels label {
-	-webkit-transform: translateY(-600%);
-	transform: translateY(-600%);
-}
-#contenedor form .labels {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-#contenedor form .labels label {
-	min-width: 100vw;
+
+#index .section-index{
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	z-index: 0;
-	transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
 }
-#video-background { 
-	position: absolute; 
-	bottom: 0px; 
-	right: 0px; 
-	min-width: 100%; 
-	min-height: 100%; 
-	width: auto; 
-	height: auto; 
-	z-index: -1000; 
-	overflow: hidden; 
-}
-#contenedor .bg-overlay {
-    background-color: rgba(36, 42, 53, 0.7);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-}
-#Slide2{
+
+#index .section-index:nth-child(2){
 	background-image: url(../img/index/home-img.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#Slide3 {
-	background-color: #8F8F8F;
-}
-#Slide4{
+#index .section-index:nth-child(3){
 	background-image: url(../img/index/nosotros-img.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#Slide5 {
-	background-image: url(../img/brands/marcas-background.jpg);
+#index .section-index:nth-child(4){
+background-image: url(../img/index/services.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #000;
 }
-#Slide6 {
-	background-color: #000;
+#index .section-index:nth-child(5){
+	background-color: white;
 }
-#Slide7 {
-	background-color: #000;
+#index .section-index:nth-child(6){
+	background-color: white;
 }
-@media (max-width: 650px) {
-#menu .navbar-brand img {
-	width: 200px;
+#index .section-index:nth-child(7){
+	background-color: white;
 }
-#contenedor form {
-	padding: 15px !important;
+#index .btn-elesud {
+	position: fixed;
+	min-height: 100vh;
+	background-image: url(../img/index/panel.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-#contenedor form input:before {
-	width: 25px !important;
-	height: 20px !important;
-}
-#contenedor form input:after {
-    margin-top: 1.5rem;
-    margin-bottom: .5rem;
-    content: "" attr(titulo) "";
-    font-family: 'digital-clock-font';
-    letter-spacing: 2px;
-    position: absolute;
-    opacity: 0;
-    font-size: .8rem !important;
-    color: #FFF;
-    display: block;
-    transition: all 0.25s linear;
-}
-}
-#contenedor .mision-vision h2,
-#contenedor .mantenimientos h2{
-	color: #3d58a1;
-}
-#contenedor .mantenimientos h2 {
-	font-size: 1.2rem;
-}
-#contenedor .mision-vision p,
-#contenedor .mantenimientos p{
-	color: #777777;
+#index .index-content {
+	margin-left: 16.666667%;
 }
 
-.brands{
-	background:rgba(0,0,0,0.3);
+@media (max-width: 991px) {
+#menu .menu {
+	display: block;
+	cursor: pointer;
+}
+#menu .mobile-menu,  #index .btn-elesud {
+	display: none;
+}
+#index .index-content {
+	margin: 0;
+}
 }
