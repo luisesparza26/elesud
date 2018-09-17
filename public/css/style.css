@@ -6,20 +6,22 @@
 }
 body {
 	box-sizing: border-box;
-	max-width: 1800px;
+	background-color: #EFEFEF;
+	max-width: 1900px;
+	margin: auto;
 	padding: 0;
-	margin: 0;
 }
-h1,h2,h3 {
+h1, h2, h3 {
 	text-transform: uppercase;
 }
 h2 {
-	margin-bottom: 2rem;
+	text-align: center;
+	margin: 2rem 0;
 	font-size: 2.5rem;
 	color: #FFF;
 	padding: .5rem 0;
 }
-h3{
+h3 {
 	color: #FFF;
 	margin: 1rem 0;
 }
@@ -28,6 +30,7 @@ ol {
 	list-style-type: decimal;
 }
 p {
+	text-align: justify;
 	font-size: 16px;
 	font-family: 'Quicksand', sans-serif;
 }
@@ -61,23 +64,25 @@ p {
 #index {
 	margin: 4.6875rem auto 0;
 }
-#index .nav {
-	margin-top: 65%;
-}
 #menu .navbar-nav .js-scroll-trigger {
-		font-size: .8rem;
+	font-size: .8rem;
 	text-align: center;
 	font-family: 'Quicksand', sans-serif;
 }
 #index .nav .js-scroll-trigger {
-	font-size: .8rem;
+	font-size: 15px;
+	font-weight: 400;
 	font-family: 'Quicksand', sans-serif;
 	display: flex;
-	color: #FFF;
+	color: transparent;
 	text-decoration: none;
 	align-items: center;
 	margin: .8rem auto;
-	margin-left: 60px;
+	margin-left: 50px;
+}
+#index .nav .js-scroll-trigger:hover {
+	color: #000;
+	transition: .5s;
 }
 #index .nav .js-scroll-trigger::before {
 	content: "" attr(numero)"";
@@ -87,13 +92,13 @@ p {
 	letter-spacing: 2px;
 	position: absolute;
 	display: flex;
-	left: 15px;
+	left: 5px;
 	justify-content: center;
 	align-items: center;
 	width: 35px;
 	padding: 5px;
 	height: 35px;
-	background-image: url(../img/index/btn.jpg);
+	background-image: url(../img/index/btn-panel.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -101,21 +106,17 @@ p {
 	border: solid #B8B8B8 2px;
 	border-radius: 50%;
 }
-#index .js-scroll-trigger:hover:nth-child(2)::before,
-#index .js-scroll-trigger:hover:nth-child(3)::before,
-#index .js-scroll-trigger:hover:nth-child(4)::before, 
-#index .js-scroll-trigger:hover:nth-child(5)::before,
-#index .js-scroll-trigger:hover:nth-child(6)::before,
-#index .js-scroll-trigger:hover:nth-child(7)::before,
-#index .js-scroll-trigger:hover:nth-child(8)::before {
+#index .js-scroll-trigger:hover:nth-child(2)::before, #index .js-scroll-trigger:hover:nth-child(3)::before, #index .js-scroll-trigger:hover:nth-child(4)::before, #index .js-scroll-trigger:hover:nth-child(5)::before, #index .js-scroll-trigger:hover:nth-child(6)::before, #index .js-scroll-trigger:hover:nth-child(7)::before, #index .js-scroll-trigger:hover:nth-child(8)::before {
+	transition: .6s ease-in-out;
 	color: #FF0000 !important;
 	border: solid #FF0000 2px;
 }
 #index input {
+	border: none;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
 	text-align: center;
-	max-width: 90%;
+	max-width: 100px;
 	margin: 0 auto;
 	background-color: #000;
 	color: #12E00A;
@@ -124,65 +125,52 @@ p {
 #index .section-index {
 	min-height: 100vh;
 }
-#index .section-index:nth-child(2) {
-	background-image: url(../img/index/about.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 #index .section-index:nth-child(3) {
-	background-image: url(../img/index/products.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#index .section-index:nth-child(4) {
-	background-image: url(../img/index/services.jpg);
+	background-image: url(../img/index/about.jpg);
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 #index .section-index:nth-child(5) {
-		background-image: url(../img/index/brands.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#index .section-index:nth-child(6) {
-	background-image: url(../img/index/projects.jpg);
+	background-image: url(../img/index/services.jpg);
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 #index .section-index:nth-child(7) {
-		background-image: url(../img/index/contact.jpg);
+	background-image: url(../img/index/projects.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#index .section-index:nth-child(8) {
+	background-image: url(../img/index/contact.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 #index .btn-elesud {
-	position: fixed;
-	min-height: 100vh;
-	background: #000000;
-	background: -webkit-linear-gradient(to bottom, #343a40, #000000);
-	background: linear-gradient(to bottom, #343a40, #000000);
-}
-#index .index-content {
-	margin-left: 16.666667%;
+    position: fixed;
+    z-index: 1000;
+	margin-left: 5px;
+    margin-top: 10%;
 }
 #home .video-bg {
 	position: absolute;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	overflow: hidden;
+	margin: auto;
+	max-width: 1900px;
 	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 }
-#home .video-bg video{
+#home .video-bg video {
 	min-height: 100%;
 	min-width: 100%;
 }
-#home .home-content{
+#home .home-content {
 	height: 100vh;
 	width: 100vw;
 	position: absolute;
@@ -190,35 +178,15 @@ p {
 	left: 0;
 	background-color: rgba(38,38,38,0.78);
 }
-#about .text-about p  {
-	color: #FFF;
-	font-size: 1.2rem;
-}
-#about .mvv p  {
-	color: #FFF;
-	font-weight: 400;
-}
-#brands .text-brands img {
-	width: 100%;
-	max-width: 400px;
-	margin: 0 auto;
-}
-#brands .text-brands p {
+#about .container p{
 	color: #FFF;
 }
-#services .bg-mtto {
-	padding: 5rem;
-	background-image: url(../img/index/mtto-prev.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+#about .mvv p{
+	text-align: center;
 }
 @media (min-width: 1050px) {
 #index .nav .js-scroll-trigger {
-	margin-left: 70px;
-}
-#index .nav .js-scroll-trigger::before {
-	left: 30px;
+	margin-left: 50px;
 }
 }
 
@@ -249,9 +217,9 @@ h2 {
 	display: block;
 	cursor: pointer;
 }
-	#index{
-		text-align: center;
-	}
+#index {
+	text-align: center;
+}
 #index .btn-elesud {
 	display: none;
 }
