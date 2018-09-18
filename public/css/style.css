@@ -111,7 +111,7 @@ p {
 	color: #FF0000 !important;
 	border: solid #FF0000 2px;
 }
-#index input {
+#index .btn-elesud input {
 	border: none;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
@@ -179,7 +179,7 @@ p {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgba(38,38,38,0.78);
+	background-color: rgba(0,0,0,0.78);
 }
 #about .container p {
 	color: #FFF;
