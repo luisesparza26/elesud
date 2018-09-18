@@ -1,10 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-</head>
+@extends( 'pagelayout' )@section( 'title' ) Accesibilidad @endsection@section( 'content' )
 
-<body>
-</body>
-</html>
+@endsection

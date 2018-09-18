@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+	<title>@yield('title','ELESUD')</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ELESUD</title>
-	<meta name="description" content=""/>
-	<meta name="keywords" content=""/>
-	<meta name="author" content="Quickly"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ isset($meta['url'])?$meta['url']:'http://www.elesud.com/' }}"/>
+	<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{{ isset($meta['type'])?$meta['type']:'website' }}"/>
+	<meta prefix="og: http://ogp.me/ns#" name="title" property="og:title" content="{{ isset($meta['title'])?$meta['title']:'ELESUD - Elevadores Sudamericanos' }}"/>
+	<meta prefix="og: http://ogp.me/ns#" name="description" property="og:description" content="{{ isset($meta['description'])? $meta['description']:'Somos una empresa formada por capitales peruanos, responsable del cumplimiento de las leyes nacionales en transporte vertical, ofreciendo equipos que cumplen con las normativas nacionales e internacionales de equipos de elevación, con el objetivo de garantizar la seguridad de los usuarios.'}}"/>
+	<!--SUBIR IMAGEN CHULA-->
+	<meta prefix="og: http://ogp.me/ns#" name="image" property="og:image" content="{{ isset($meta['image'])?$meta['image']:'#' }}"/>
+	<meta prefix="og: http://ogp.me/ns#" name="author" content="Quickly LA"/>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
 	<link rel="stylesheet" href="{{asset('css/animate.css')}}" type="text/css">
@@ -15,7 +18,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="menu">
-		<a class="navbar-brand js-scroll-trigger" href="#home"><img src="{{ asset('img/logo/logo2.png') }}" alt="logo"></a>
+		<a class="navbar-brand js-scroll-trigger" href="{{ url('/') }}"><img src="{{ asset('img/logo/logo2.png') }}" alt="logo"></a>
 		<button class="menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			<div><span class="line"></span><span class="line"></span><span class="line"></span>
 			</div>

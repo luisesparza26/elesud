@@ -22,6 +22,7 @@ Route::get('/servicios', 'Web\PageController@servicios');
 
 
 //Rutas Ascensores
+Route::get('/ascensores', 'Web\AscensoresController@ascensores');
 Route::get('/ascensores-alta-proteccion', 'Web\AscensoresController@ascensores_alta_proteccion');
 Route::get('/ascensores-especiales', 'Web\AscensoresController@ascensores_especiales');
 Route::get('/ascensores-industriales', 'Web\AscensoresController@ascensores_industriales');
@@ -36,8 +37,10 @@ Route::get('/elevador-hidraulico', 'Web\ElevadoresController@elevador_hidraulico
 Route::get('/elevador-hospitales', 'Web\ElevadoresController@elevador_hospitales');
 Route::get('/elevador-piscina', 'Web\ElevadoresController@elevador_piscina');
 Route::get('/elevador-cremallera', 'Web\ElevadoresController@elevador_cremallera');
+Route::get('/elevadores-para-construccion', 'Web\ElevadoresController@elevadores_para_construccion');
 
 //Rutas Escaleras
+Route::get('/escaleras-y-rampas', 'Web\EscalerasController@escaleras_y_rampas');
 Route::get('/escaleras-electricas', 'Web\EscalerasController@escaleras_electricas');
 Route::get('/escaleras-mecanicas', 'Web\EscalerasController@escaleras_mecanicas');
 Route::get('/escaleras-publicas', 'Web\EscalerasController@escaleras_publicas');

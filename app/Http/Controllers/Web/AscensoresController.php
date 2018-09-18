@@ -7,6 +7,18 @@ use App\Http\Controllers\Controller;
 
 class AscensoresController extends Controller
 {
+	    public function ascensores(){
+    	$meta = [
+			"url" => "www.elesud.com/ascensores",
+			"type" => "website",
+			"title" => "Elesud - Ascensores",
+			"description" => "#",
+			"image" => "#",
+		];
+
+		return view( 'ascensores', [ 'meta' => $meta ] );
+	}
+	
     public function ascensores_alta_proteccion(){
     	$meta = [
 			"url" => "www.elesud.com/ascensores-alta-proteccion",

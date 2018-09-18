@@ -7,6 +7,17 @@ use App\Http\Controllers\Controller;
 
 class EscalerasController extends Controller
 {
+	 public function escaleras_y_rampas(){
+    	$meta = [
+			"url" => "www.elesud.com/escaleras-y-rampas",
+			"type" => "website",
+			"title" => "Elesud - Escaleras",
+			"description" => "#",
+			"image" => "#",
+		];
+
+		return view( 'escaleras-electricas', [ 'meta' => $meta ] );
+	}
     public function escaleras_electricas(){
     	$meta = [
 			"url" => "www.elesud.com/escaleras-electricas",
