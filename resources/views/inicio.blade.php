@@ -25,10 +25,10 @@
 		<section id="about" class="section-index">
 			<div class="container">
 				<div class="p-4 text-about">
-					<h2>Nosotros</h2>
+					<h2 class="wow fadeInRight">Nosotros</h2>
 					<div class="row align-items-center">
 						<div class="col-lg-9">
-							<p>Somos una empresa formada por capitales peruanos, responsable del cumplimiento de las leyes nacionales en transporte vertical, ofreciendo equipos que cumplen con las normativas nacionales e internacionales de equipos de elevación, con el objetivo de garantizar la seguridad de los usuarios. <br><br>Cumplimos con Norma A120 para personas discapacitadas y Reglamento Nacional de Edificaciones - Sección Transporte Mecánico. Contamos con Certificaciones <b>ISO 9001- Calidad</b>.</p>
+							<p>Somos una empresa formada por capitales peruanos, responsable del cumplimiento de las leyes nacionales en transporte vertical, ofreciendo equipos que cumplen con las normativas nacionales e internacionales de equipos de elevación, con el objetivo de garantizar la seguridad de los usuarios. <br><br>Cumplimos con Norma A120 para personas discapacitadas y Reglamento Nacional de Edificaciones - Sección Transporte Mecánico. Contamos con Certificaciones <b>ISO 9001 - Calidad</b>.</p>
 						</div>
 						<div class="col-lg-3 py-2">
 							<img src="{{ asset('img/index/sgs.png') }}" alt="SGS">
@@ -36,17 +36,17 @@
 					</div>
 				</div>
 				<div class="row mvv m-0 text-center">
-					<div class="col-lg-4">
+					<div class="wow slideInLeft col-lg-4">
 						<img src="{{ asset('img/index/mision.svg') }}" alt="mision" width="50">
 						<h3>Misión</h3>
 						<p>Garantizar la mejor solución en transporte vertical brindando seguridad a nuestros usuarios con equipos de última generación.</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="wow slideInUp col-lg-4">
 						<img src="{{ asset('img/index/vision.svg') }}" alt="vision" width="50">
 						<h3>Visión</h3>
 						<p>Ser una de las empresas más confiables brindando las mejores soluciones en los diferentes proyectos del país.</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="wow slideInRight col-lg-4">
 						<img src="{{ asset('img/index/valores.svg') }}" alt="valores" width="50">
 						<h3>Valores</h3>
 						<p>Responsabilidad y compromiso en los servicios asumidos.</p>
@@ -54,7 +54,68 @@
 				</div>
 			</div>
 		</section>
-		<section id="products" class="section-index"></section>
+		<section id="products" class="section-index">
+			<div class="container py-4">
+				<h2 class="wow fadeInLeft">Productos</h2>
+				<div class="products-container row">
+					<div class=".col-lg-12 news-card">
+						<img src="{{ asset('img/products/accessibility.jpg') }}" alt="accessibility" class="products-img">
+						<div class="card-text">
+							<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/accessibility.svg') }}" alt="icon" width="30">Accesibilidad</h2>
+							<div class="card-more">
+								<a href="#" class="more">Ver más</a>
+							</div>
+						</div>
+					</div>
+					<div class="row mx-0">
+						<div class="col-xl-3 col-md-6 p-0">
+							<div class="news-card">
+								<img src="{{ asset('img/products/escalator.jpg') }}" alt="" class="products-img">
+								<div class="card-text">
+									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/escalator.svg') }}" alt="icon" width="30">Escaleras y rampas</h2>
+									<div class="card-more">
+										<a href="#" class="more">Ver más</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6 p-0">
+							<div class="news-card">
+								<img src="{{ asset('img/products/passenger.jpg') }}" alt="" class="products-img">
+								<div class="card-text">
+									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/elevator.svg') }}" alt="icon" width="30">Ascensores</h2>
+									<div class="card-more">
+										<a href="#" class="more">Ver más</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6 p-0">
+							<div class="news-card">
+								<img src="{{ asset('img/products/construction.jpg') }}" alt="" class="products-img">
+								<div class="card-text">
+									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/construction.svg') }}" alt="icon" width="30">Elevadores para construcción</h2>
+									<div class="card-more">
+										<a href="#" class="more">Ver más</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6 p-0">
+							<div class="news-card">
+								<img src="{{ asset('img/products/industrial.jpg') }}" alt="" class="products-img">
+								<div class="card-text">
+									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/industrial.svg') }}" alt="icon" width="30">Ascensores Industriales</h2>
+									<div class="card-more">
+										<a href="#" class="more">Ver más</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section id="services" class="section-index"></section>
 		<section id="brands" class="section-index"></section>
 		<section id="projects" class="section-index"></section>
@@ -113,11 +174,7 @@
 			</div>
 			<div id="contact" class="section-index">
 			</div>
-			<footer class="py-3 bg-dark">
-				<div class="container">
-					<p class="m-0 text-center text-white">Copyright 2018 &copy;Elevadores Sudamericanos S.A.C &#124; Designed by Quickly LA</p>
-				</div>
-			</footer>
+
 		</div>
 	</section>-->
 			@endsection

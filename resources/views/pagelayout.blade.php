@@ -47,6 +47,11 @@
 		</div>
 	</nav>
 	@yield('content')
+	<footer class="py-3 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright 2018 &copy;Elevadores Sudamericanos S.A.C &#124; Designed by Quickly LA</p>
+		</div>
+	</footer>
 	<script src="{{ asset('js/jquery.js') }}"></script>
 	<script src="{{ asset('js/scroll.js') }}"></script>
 	<script src="{{ asset('js/main.js') }}"></script>
