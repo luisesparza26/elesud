@@ -16,10 +16,9 @@ h1, h2, h3 {
 h2 {
 	text-align: center;
 	font-weight: 400;
-	margin: 2rem 0;
+	padding: 3rem 0 1rem;
 	font-size: 2.5rem;
 	color: #000;
-	padding: .5rem 0;
 }
 h3 {
 	color: #FFF;
@@ -41,6 +40,17 @@ hr[role="sub"] {
 	background-color: #3d58a1;
 	margin: .5rem auto 4rem;
 	display: block;
+}
+hr[role="back"] {
+	width: 50px;
+	margin: 0;
+	height: 3px;
+	left: 0;
+	background-color: #3d58a1;
+	display: block;
+}
+.btn-secondary {
+	transform: scale(1.05)
 }
 #menu .navbar-brand img {
 	width: 300px;
@@ -119,39 +129,49 @@ hr[role="sub"] {
 #index .btn-elesud input {
 	border-radius: 2px;
 	margin-left: 5px;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    text-align: center;
-    width: 35px;
-    height: 35px;
-    background-color: #000;
-    color: #12E00A;
-    font-family: 'digital-clock-font';
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	background-color: #000;
+	color: #12E00A;
+	font-family: 'digital-clock-font';
 }
 #index .section-index {
+	display: flex;
+	align-items: center;
 	min-height: 100vh;
+	max-height: 100%;
 }
-/*#index .section-index:nth-child(3) {
-	background-image: url(../img/index/services.jpg);
+#index .section-index:nth-child(3) {
+	background-image: url(../img/index/06.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 150px !important;
+	min-height: inherit;
 }
-#index .section-index:nth-child(6) {
-	background-image: url(../img/index/projects.jpg);
+#index .section-index:nth-child(4){
+	min-height: inherit;
+}
+#index .section-index:nth-child(5) {
+	background-image: url(../img/index/01.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: inherit;
 }
+
 #index .section-index:nth-child(7) {
-	background-image: url(../img/index/contact.jpg);
+	background-image: url(../img/index/04.jpg);
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}*/
+	min-height: inherit;
+}
 #index .btn-elesud {
 	position: fixed;
 	z-index: 1000;
@@ -178,11 +198,10 @@ hr[role="sub"] {
 	left: 0;
 	background-color: rgba(0,0,0,0.78);
 }
-#about .container h3 {
-	color: #000;
-}
+#about h2,
+#about .container h3,
 #about .container p {
-	color: #525252;
+	color: #FFF;
 }
 #products .news-card {
 	margin: 0.5rem;
@@ -256,14 +275,40 @@ hr[role="sub"] {
 	transform: scale(1.1);
 	z-index: -1;
 }
-#products .more {
+#services .container h2 {
+	color: #FFF;
 }
-#products .more:hover {
-	background-color: #FFF;
-	color: #000;
-	transition: .2s;
+#services p{
+	color: #FFF;
 }
-
+#services .card {
+	background-color: transparent !important;
+	border: none;
+	overflow: hidden
+}
+#services .card h4 {
+	color: #FFF;
+	text-transform: uppercase;
+	margin: .8rem 0;
+}
+#services .card p {
+	font-size: 1rem;
+}
+#services .card-img-top {
+	padding: 1rem 0;
+	transition: transform 3s ease;
+}
+#services .card-img-top:hover {
+	transform: scale(1.1)
+}
+#services .btn-secondary {
+	background-color: #3d58a1;
+	border: none;
+}
+#projects h2,
+#projects .container p {
+	color: #FFF;
+}
 @media (min-width: 1050px) {
 #index .nav .js-scroll-trigger {
 	margin-left: 50px;
@@ -331,4 +376,10 @@ p {
 #products .card-title {
 	font-size: 1rem;
 }
+hr[role="back"] {
+	margin: auto;
+}
+	#services .content-btn {
+		text-align: center !important;
+	}
 }

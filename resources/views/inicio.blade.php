@@ -59,7 +59,7 @@
 			<div class="container py-4">
 				<h2 class="wow fadeInLeft">Productos</h2>
 				<hr role="sub">
-				<p class="py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut saepe quidem, mollitia maxime nulla officia debitis in nihil laboriosam qui, consequuntur accusantium sint praesentium, ad porro dicta amet at libero.</p>
+				<p class="py-4 text-center">Conozca nuestra amplia gama de productos</p>
 				<div class="products-container row">
 					<div class=".col-lg-12 news-card wow slideInDown">
 						<img src="{{ asset('img/products/accessibility.jpg') }}" alt="accessibility" class="products-img">
@@ -123,12 +123,67 @@
 			<div class="container">
 				<h2 class="wow fadeInRight">Servicios</h2>
 				<hr role="sub">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum similique eligendi perferendis. Animi soluta, fugit dolores voluptate iure, maiores esse beatae rem, deserunt harum illum perspiciatis veniam tenetur ipsum quasi.</p>
+				<p>Ofrecemos a nuestros clientes la más amplia gama de servicios de mantenimiento de elevadores de acuerdo a la normativa vigente y enfocados a la seguridad y la eficiencia energética: mantenimiento preventivo, correctivo, instalación y montaje, revisión de los componentes de seguridad y sistemas de alarma.</p>
+				<p>Para garantizar la calidad de nuestro servicio contamos con un equipo de profesionales altamente cualificados, amplia infraestructura y una atención 24 horas durante todo el año.</p>
+				<div class="row py-5">
+					<div class="col-xl-7 col-md-6">
+						<div class="card pb-2 my-3 wow slideInLeft">
+							<img class="card-img-top" src="{{ asset('img/services/preventivo.jpg') }}" alt="preventivo">
+							<div class="card-block">
+								<div class="card-trans">
+									<h4 class="card-title">Mantenimiento Preventivo</h4>
+									<hr role="back">
+									<p class="card-text py-3">El mantenimiento preventivo de los elevadores se realizará en las visitas periódicas y consistirá en la verificación metódica de la instalación eléctrica y órganos mecánicos con el fin de ajustar, reparar o sustituir piezas antes de que su estado pueda ocasionar averías o anormalidades en el funcionamiento.</p>
+									<div class="text-right content-btn">
+										<a href="#" class="btn btn-secondary">Solicitar cotización</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card pb-2 my-3 wow slideInLeft">
+							<img class="card-img-top" src="{{ asset('img/services/correctivo.jpg') }}" alt="correctivo">
+							<div class="card-block">
+								<div class="card-trans">
+									<h4 class="card-title">Mantenimiento Correctivo</h4>
+									<hr role="back">
+									<p class="card-text py-3">Confía tu equipo en manos de expertos; contamos con técnicos especializados y atención de emergencias los 365 días del año, 24 horas al día. Ofrecemos contratos de mantenimiento a tu necesidad, estos están diseñados para satisfacer las diversas necesidades de nuestros clientes.</p>
+									<div class="text-right content-btn">
+										<a href="#" class="btn btn-secondary">Contácta un especialista</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-5 col-md-6">
+						<div class="card pb-2 my-3 wow slideInRight">
+							<img class="card-img-top" src="{{ asset('img/services/instalacion.jpg') }}" alt="instalacion">
+							<div class="card-block">
+								<h4 class="card-title">Intalación</h4>
+								<hr role="back">
+								<p class="card-text py-3">Contamos con personal técnico altamente capacitado para estos trabajos, respetando las Normas de Seguridad y Salud en el trabajo nacionales <b>Norma-G-050 e Internacionales (OSHAS 18001)</b>.</p>
+								<div class="text-right content-btn">
+									<a href="#" class="btn btn-secondary">Solicitar cotización</a>
+								</div>
+							</div>
+						</div>
+						<div class="card pb-2 my-3 wow slideInRight">
+							<img class="card-img-top" src="{{ asset('img/services/modernizacion.jpg') }}" alt="modernizacion">
+							<h4 class="card-title">Modernización</h4>
+							<hr role="back">
+							<div class="card-block">
+								<p class="card-text py-3">Modernización es sinónimo de vanguardia, seguridad y comodidad, cuando usted decide hacer una modernización está protegiendo su inversión a largo plazo y garantiza un buen funcionamiento de su equipo para los usuarios, modernizar parcialmente o realizar una sustitución completa es posible con Elevadores Sudamericanos.</p>
+								<div class="text-right content-btn">
+									<a href="#" class="btn btn-secondary">Solicitar cotización</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="brands" class="section-index">
 			<div class="container">
-				<h2>Representamos a las mejores marcas del mundo</h2>
+				<h2 class="wow fadeInLeft">Representamos a las mejores marcas del mundo</h2>
 				<hr role="sub">
 				<p>Ser especialistas en trasporte vertical y con más de 15 años de experiencia en el rubro, nos ha permitido seleccionar a las mejores marcas para cada aplicación a nivel mundial.</p>
 				<div class="row align-items-center py-5">
@@ -145,12 +200,15 @@
 						<img class="w-100" src="{{ asset('img/brands/hidral.png') }}" alt="Representaciones">
 					</div>
 				</div>
+			</div>
 		</section>
 		<section id="projects" class="section-index">
 			<div class="container">
 				<h2 class="wow fadeInLeft">Conóce nuestros proyectos</h2>
 				<hr role="sub">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aspernatur nobis consectetur, tenetur accusantium quos maxime cupiditate, modi, nemo, atque velit. Voluptas tenetur qui voluptate ipsa, quae quos perspiciatis inventore.</p>
+				<p>Contamos con una larga trayectoria de trabajos tanto para particulares como empresas, así como una amplia variedad de proyectos industriales.</p>
+				<p>Cada uno de ellos ha sido pensado, diseñado y fabricado de forma personalizada y a medida, siguiendo y cumpliendo las necesidades del cliente.</p>
+				<p>En este apartado mostramos una pequeña selección de los mismos</p>
 			</div>
 		</section>
 		<section id="contact" class="section-index">
@@ -216,48 +274,6 @@
 					</div>
 				</div>
 			</div>
-			</div>
-
-
-			<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
-			<script type="text/javascript">
-				$.( 'document' ).ready( function ( $ ) {
-					function init_map1() {
-						var myLocation = new google.maps.LatLng( 38.885516, -77.09327200000001 );
-						var mapOptions = {
-							center: myLocation,
-							zoom: 16
-						};
-						var marker = new google.maps.Marker( {
-							position: myLocation,
-							title: "Property Location"
-						} );
-						var map = new google.maps.Map( document.getElementById( "map1" ),
-							mapOptions );
-						marker.setMap( map );
-					}
-					init_map1();
-				} );
-			</script>
-
-			<style>
-				.map {
-					min-width: 300px;
-					min-height: 300px;
-					width: 100%;
-					height: 100%;
-				}
-				
-				.header {
-					background-color: #F5F5F5;
-					color: #36A0FF;
-					height: 70px;
-					font-size: 27px;
-					padding: 10px;
-				}
-			</style>
-
 		</section>
 	</div>
 @endsection
