@@ -50,6 +50,59 @@
 		</div>
 	</nav>
 	@yield('content')
+	<section id="contact" class="section-index">
+			<div class="container">
+				<h2>Contáctanos</h2>
+				<hr role="sub">
+				<div class="row">
+					<div class="col-lg-6 py-3">
+						<div class="well well-sm">
+							<form class="" method="post">
+								<fieldset>
+									<div class="form-group">
+										<div class="col-md-10 offset-md-1">
+											<input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-10 offset-md-1">
+											<input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-md-10 offset-md-1">
+											<input id="email" name="email" type="text" placeholder="Correo" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-md-10 offset-md-1">
+											<input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-md-10 offset-md-1">
+											<textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje." rows="7"></textarea>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-lg-12 px-5 mx-1">
+											<button type="submit" class="mx-2 btn btn-secondary">Enviar</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-6 py-3">
+						<div class="fb-page" data-href="https://www.facebook.com/ELESUDPERU" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ELESUDPERU" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ELESUDPERU">Elevadores Sudamericanos</a></blockquote></div>
+					</div>
+				</div>
+			</div>
+		</section>
 	<footer class="py-3 bg-dark">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright 2018 &copy;Elevadores Sudamericanos S.A.C &#124; Designed by Quickly LA</p>

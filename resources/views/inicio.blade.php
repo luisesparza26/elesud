@@ -18,7 +18,13 @@
 					<source src="{{ asset('img/index/home.mp4') }}">
 				</video>
 				<div class="home-content text-center">
-
+					<div class="container align-self-center">
+						<img src="{{ asset('img/logo/logo2.png') }}" alt="logo">
+						<div class="branding">
+							<h2>Líderes en transporte vertical</h2>
+							<p class="text-center">Instalación y mantenimiento de ascensores</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -131,7 +137,7 @@
 							<img class="card-img-top" src="{{ asset('img/services/preventivo.jpg') }}" alt="preventivo">
 							<div class="card-block">
 								<div class="card-trans">
-									<h4 class="card-title">Mantenimiento Preventivo</h4>
+									<h4 class="card-title"><img class="mr-2" src="{{ asset('img/services/04.svg') }}" alt="icon" width="30">Mantenimiento Preventivo</h4>
 									<hr role="back">
 									<p class="card-text py-3">El mantenimiento preventivo de los elevadores se realizará en las visitas periódicas y consistirá en la verificación metódica de la instalación eléctrica y órganos mecánicos con el fin de ajustar, reparar o sustituir piezas antes de que su estado pueda ocasionar averías o anormalidades en el funcionamiento.</p>
 									<div class="text-right content-btn">
@@ -144,7 +150,7 @@
 							<img class="card-img-top" src="{{ asset('img/services/correctivo.jpg') }}" alt="correctivo">
 							<div class="card-block">
 								<div class="card-trans">
-									<h4 class="card-title">Mantenimiento Correctivo</h4>
+									<h4 class="card-title"><img class="mr-2" src="{{ asset('img/services/03.svg') }}" alt="icon" width="30">Mantenimiento Correctivo</h4>
 									<hr role="back">
 									<p class="card-text py-3">Confía tu equipo en manos de expertos; contamos con técnicos especializados y atención de emergencias los 365 días del año, 24 horas al día. Ofrecemos contratos de mantenimiento a tu necesidad, estos están diseñados para satisfacer las diversas necesidades de nuestros clientes.</p>
 									<div class="text-right content-btn">
@@ -158,7 +164,7 @@
 						<div class="card pb-2 my-3 wow slideInRight">
 							<img class="card-img-top" src="{{ asset('img/services/instalacion.jpg') }}" alt="instalacion">
 							<div class="card-block">
-								<h4 class="card-title">Intalación</h4>
+								<h4 class="card-title"><img class="mr-2" src="{{ asset('img/services/01.svg') }}" alt="icon" width="30">Intalación</h4>
 								<hr role="back">
 								<p class="card-text py-3">Contamos con personal técnico altamente capacitado para estos trabajos, respetando las Normas de Seguridad y Salud en el trabajo nacionales <b>Norma-G-050 e Internacionales (OSHAS 18001)</b>.</p>
 								<div class="text-right content-btn">
@@ -168,9 +174,9 @@
 						</div>
 						<div class="card pb-2 my-3 wow slideInRight">
 							<img class="card-img-top" src="{{ asset('img/services/modernizacion.jpg') }}" alt="modernizacion">
-							<h4 class="card-title">Modernización</h4>
-							<hr role="back">
 							<div class="card-block">
+								<h4 class="card-title"><img class="mr-2" src="{{ asset('img/services/02.svg') }}" alt="icon" width="30">Modernización</h4>
+								<hr role="back">
 								<p class="card-text py-3">Modernización es sinónimo de vanguardia, seguridad y comodidad, cuando usted decide hacer una modernización está protegiendo su inversión a largo plazo y garantiza un buen funcionamiento de su equipo para los usuarios, modernizar parcialmente o realizar una sustitución completa es posible con Elevadores Sudamericanos.</p>
 								<div class="text-right content-btn">
 									<a href="#" class="btn btn-secondary">Solicitar cotización</a>
@@ -206,72 +212,34 @@
 			<div class="container">
 				<h2 class="wow fadeInLeft">Conóce nuestros proyectos</h2>
 				<hr role="sub">
-				<p>Contamos con una larga trayectoria de trabajos tanto para particulares como empresas, así como una amplia variedad de proyectos industriales.</p>
-				<p>Cada uno de ellos ha sido pensado, diseñado y fabricado de forma personalizada y a medida, siguiendo y cumpliendo las necesidades del cliente.</p>
-				<p>En este apartado mostramos una pequeña selección de los mismos</p>
-			</div>
-		</section>
-		<section id="contact" class="section-index">
-			<div class="container">
-				<h2>Contáctanos</h2>
-				<hr role="sub">
-				<div class="row">
-					<div class="col-lg-6 py-3">
-						<div class="well well-sm">
-							<form class="" method="post">
-								<fieldset>
-									<div class="form-group">
-										<div class="col-md-10 offset-md-1">
-											<input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="col-md-10 offset-md-1">
-											<input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="col-md-10 offset-md-1">
-											<input id="email" name="email" type="text" placeholder="Correo" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="col-md-10 offset-md-1">
-											<input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="col-md-10 offset-md-1">
-											<textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje." rows="7"></textarea>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<div class="col-lg-12 px-5 mx-1">
-											<button type="submit" class="btn btn-secondary">Enviar</button>
-										</div>
-									</div>
-								</fieldset>
-							</form>
-						</div>
+				<p>Contamos con una trayectoria de trabajos realizados, cada uno de ellos ha sido pensado, diseñado y fabricado de forma personalizada y a medida, siguiendo y cumpliendo las necesidades del cliente.</p>
+				<div class="row py-5 text-center">
+					<div class="col-md-4 col-sm-6 wow fadeIn">
+						<img class="w-100" src="{{ asset('img/projects/guipor.png') }}">
+						<h4>Centro Comercial <b>Guipor</b><br>Lima</h4>
 					</div>
-					<div class="col-lg-6 py-3">
-						<div>
-							<div class="card ">
-								<div class="text-xs-center header">Nuestra ubicación.</div>
-								<div class="card-block text-xs-center">
-									<h4>Dirección:</h4>
-									<div>
-										2217 Washington Blvd<br/> Washington DC<br/> #(703) 1234 1234<br/> service@company.com
-										<br/>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
+						<img class="w-100" src="{{ asset('img/projects/guizado.jpg') }}">
+						<h4><b>Hotel Guizado Portillo</b><br>Lunahuaná</h4>
 					</div>
+					<div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".7s">
+						<img class="w-100" src="{{ asset('img/projects/record.png') }}">
+						<h4>Centro Comercial <b>Record</b><br>Lima</h4>
+					</div>
+				</div>
+				<div class="projects-p py-3">
+					<h3>Proyectos en ejecución</h3>
+					<ul>
+						<li>CLINICA PRIVADA “NOVA CLINIC”</li>
+						<li>COLEGIO GALILEO </li>
+						<li>MULTIFAMILIAR QUISPICANCHIS</li>
+						<li>MULTIFAMILIAR SALAZAR BARRETO 291</li>
+						<li>MULTIFAMILIAR GIORGIO BALLETA</li>
+						<li>MULTIFAMILIAR TOMAS MARSANO II</li>
+						<li>I.E. 558 VILLA EL SALVADOR</li>
+						<li>I.E. 3056 INDEPENDENCIA</li>
+						<li>OFICINAS RENIEC – LINCE</li>
+					</ul>
 				</div>
 			</div>
 		</section>

@@ -9,6 +9,7 @@ body {
 	max-width: 1900px;
 	margin: auto;
 	padding: 0;
+	font-family: 'Quicksand', sans-serif;
 }
 h1, h2, h3 {
 	text-transform: uppercase;
@@ -31,7 +32,6 @@ ol {
 p {
 	text-align: justify;
 	font-size: 18px;
-	font-family: 'Quicksand', sans-serif;
 }
 hr[role="sub"] {
 	width: 40px;
@@ -54,6 +54,9 @@ hr[role="back"] {
 }
 #menu .navbar-brand img {
 	width: 300px;
+}
+#menu .logo-fix {
+	display: none;
 }
 #menu .menu {
 	display: none;
@@ -83,6 +86,9 @@ hr[role="back"] {
 	font-size: .8rem;
 	text-align: center;
 	font-family: 'Quicksand', sans-serif;
+}
+#menu .navbar-collapse {
+	background-color: #343a40 ;
 }
 #index .nav .js-scroll-trigger {
 	font-size: 14px;
@@ -152,7 +158,7 @@ hr[role="back"] {
 	background-size: cover;
 	min-height: inherit;
 }
-#index .section-index:nth-child(4){
+#index .section-index:nth-child(4) {
 	min-height: inherit;
 }
 #index .section-index:nth-child(5) {
@@ -163,7 +169,6 @@ hr[role="back"] {
 	background-size: cover;
 	min-height: inherit;
 }
-
 #index .section-index:nth-child(7) {
 	background-image: url(../img/index/04.jpg);
 	background-attachment: fixed;
@@ -191,6 +196,7 @@ hr[role="back"] {
 	min-width: 100%;
 }
 #home .home-content {
+	display: flex;
 	height: 100vh;
 	width: 100vw;
 	position: absolute;
@@ -198,9 +204,24 @@ hr[role="back"] {
 	left: 0;
 	background-color: rgba(0,0,0,0.78);
 }
-#about h2,
-#about .container h3,
-#about .container p {
+#home h2 {
+background-color: #3d58a1;
+    display: block;
+    padding: .5rem;
+    width: 65%;
+    color: #FFF;
+    margin: auto;
+}
+#home p {
+	color: #FFF;
+		padding: 2rem 0;
+	font-size: 1.3rem;
+}
+#home .home-content img{
+	width: 100%;
+	max-width: 700px;
+}
+#about h2, #about .container h3, #about .container p {
 	color: #FFF;
 }
 #products .news-card {
@@ -278,7 +299,7 @@ hr[role="back"] {
 #services .container h2 {
 	color: #FFF;
 }
-#services p{
+#services p {
 	color: #FFF;
 }
 #services .card {
@@ -295,18 +316,37 @@ hr[role="back"] {
 	font-size: 1rem;
 }
 #services .card-img-top {
-	padding: 1rem 0;
 	transition: transform 3s ease;
 }
 #services .card-img-top:hover {
 	transform: scale(1.1)
 }
+#services .card-block {
+	padding: 1rem;
+	background: #000000;
+	background: -webkit-linear-gradient(to bottom, #434343, #000000);
+	background: linear-gradient(to bottom, #434343, #000000);
+}
+#services .card-title {
+	display: flex;
+	align-items: center;
+}
 #services .btn-secondary {
 	background-color: #3d58a1;
 	border: none;
 }
-#projects h2,
-#projects .container p {
+#projects h2, #projects h4, #projects .container p {
+	color: #FFF;
+}
+#projects h4 {
+	font-size: 1.2rem;
+	padding: 1.2rem 0;
+	font-weight: 100;
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#projects .projects-p ul {
 	color: #FFF;
 }
 @media (min-width: 1050px) {
@@ -314,7 +354,11 @@ hr[role="back"] {
 	margin-left: 50px;
 }
 }
-
+@media (min-width: 768px) {
+	#projects h4 {
+		font-size: .9rem;
+	}
+}
 @media (min-width: 900px) {
 #products .news-card:hover .card-more {
 	max-height: 20rem;
@@ -370,6 +414,12 @@ p {
 #index .index-content {
 	margin: 0;
 }
+#home h2 {
+font-size: 2rem;
+}
+#home p {
+	font-size: 1rem;
+}
 #products .products-container {
 	padding: 0;
 }
@@ -379,7 +429,7 @@ p {
 hr[role="back"] {
 	margin: auto;
 }
-	#services .content-btn {
-		text-align: center !important;
-	}
+#services .content-btn {
+	text-align: center !important;
+}
 }

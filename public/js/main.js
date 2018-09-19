@@ -1,3 +1,15 @@
+//$(document).ready(controlCabecera);
+//$(document).scroll(controlCabecera);
+//$(window).resize(controlCabecera);
+//function controlCabecera() {
+//		'use strict';
+//    var scrollY = $(document).scrollTop();
+//    if (scrollY > 200) {
+//        $('#menu').removeClass('bg-transparent');
+//    } else {
+//        $('#menu').addClass('bg-transparent');
+//    }
+//}
 $(document).ready(function () {
 	'use strict';
 	$('.menu').click(function () {
@@ -56,3 +68,22 @@ $(document).ready(function () {
 		$("#panel").val(text);
 	});
 });
+//$(document).ready(logoFix);
+//$(document).scroll(logoFix);
+//$(window).resize(logoFix);
+//function logoFix() {
+//		'use strict';
+//    var scrollY = $(document).scrollTop();
+//    if (scrollY > 200) {
+//        $('.navbar-brand').removeClass('logo-fix');
+//    } else {
+//        $('.navbar-brand').addClass('logo-fix');
+//    }
+//}
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
