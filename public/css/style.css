@@ -411,7 +411,7 @@ h2 {
 
 @media (max-width: 991px) {
 p {
-	text-align: center!important
+	text-align: center !important;
 }
 #menu .menu {
 	display: block;
@@ -419,9 +419,6 @@ p {
 }
 #index {
 	text-align: center;
-}
-#btn-elesud {
-	display: none;
 }
 #index .index-content {
 	margin: 0;
@@ -446,4 +443,9 @@ hr[role="back"] {
 }
 #services .content-btn {
 	text-align: center !important;
+}
+@media (max-width: 1110px) {
+	#btn-elesud {
+	display: none;
+}
 }
