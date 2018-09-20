@@ -9,26 +9,26 @@ use PHPMailer;
 
 class ContactController extends Controller {
     
-    public function contact(){
+    public function contact(Request $request){
     	$mail = new PHPMailer;
 		// notice the \ you have to use root namespace here
 		try {
 		$mail->isSMTP(); // tell to use smtp
 		$mail->CharSet = "utf-8"; // set charset to utf8
-		$mail->Host = $_SERVER['MAIL_HOST_NAME'];
+		$mail->Host = $_SERVER['localhost'];
 		$mail->SMTPAuth = false;
 		$mail->SMTPSecure = false;
 		$mail->Port = 25; // most likely something different for you. This is the mailtrap.io port i use for testing. 
 		$mail->Username = "";
 		$mail->Password = "";
-		$mail->setFrom("examle@examle.com", "examle Team");
+		$mail->setFrom("example@gmail.com", "examle Team");
 		$mail->Subject = "examle";
-		$mail->MsgHTML("This is a test new test");
-		$mail->addAddress("kundan.roy@examle.net", "admin");
-		$mail->addAddress("examle@gmail.com", "test");
-		$mail->addReplyTo('examle@examle.net', 'Information');
-		$mail->addBCC('examle@examle.net');
-		$mail->addAttachment('/home/kundan/Desktop/abc.doc', 'abc.doc'); // Optional name
+		$mail->MsgHTML("This is a test new test ");
+		$mail->addAddress("ep.luisjesus@gmail.com", "admin");
+		//$mail->addAddress("examle@gmail.com", "test");
+		//$mail->addReplyTo('examle@examle.net', 'Information');
+		//$mail->addBCC('examle@examle.net');
+		//$mail->addAttachment('/home/kundan/Desktop/abc.doc', 'abc.doc'); // Optional name
 		$mail->SMTPOptions= array(
 		'ssl' => array(
 		'verify_peer' => false,
@@ -43,7 +43,7 @@ class ContactController extends Controller {
 		} catch (Exception $e) {
 		echo $e;
 		}
-		echo success;
+		return success;
 		    }
 
 }
