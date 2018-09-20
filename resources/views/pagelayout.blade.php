@@ -26,7 +26,7 @@
 				<div class="row">
 					<div class="col-lg-6 py-3">
 						<div class="well well-sm">
-							<form class="" action="route('contacto')" method="post">
+							<form class="" action="{{route('contacto')}}" method="post">
 								<fieldset>
 									<div class="form-group">
 										<div class="col-md-10 offset-md-1">
