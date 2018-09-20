@@ -1,17 +1,5 @@
 @extends( 'pagelayout' )@section( 'content' )
 	<div id="index">
-		<div class="btn-elesud">
-			<div class="nav  flex-column align-items-start">
-				<input class="mb-3" type="text" id="panel" readonly disabled>
-				<a id="homebtn" class="js-scroll-trigger" href="#home" value="I" numero="6">Inicio</a>
-				<a id="aboutbtn" class="js-scroll-trigger" href="#about" value="N" numero="5">Nosotros</a>
-				<a id="productsbtn" class="js-scroll-trigger" href="#products" value="P" numero="4">Productos</a>
-				<a id="servicesbtn" class="js-scroll-trigger" href="#services" value="S" numero="3">Servicios</a>
-				<a id="brandsbtn" class="js-scroll-trigger" href="#brands" value="M" numero="2">Marcas</a>
-				<a id="projectsbtn" class="js-scroll-trigger" href="#projects" value="P" numero="1">Proyectos</a>
-				<a id="contactbtn" class="js-scroll-trigger" href="#contact" value="C" numero="S1">Contacto</a>
-			</div>
-		</div>
 		<section id="home" class="section-index">
 			<div class="video-bg">
 				<video autoplay loop muted>
@@ -19,10 +7,10 @@
 				</video>
 				<div class="home-content text-center">
 					<div class="container align-self-center">
-						<img src="{{ asset('img/logo/logo2.png') }}" alt="logo">
+						<img src="{{ asset('img/logo/logo-vertical.png') }}" alt="logo">
 						<div class="branding">
-							<h2>Líderes en transporte vertical</h2>
-							<p class="text-center">Instalación y mantenimiento de ascensores</p>
+							<h2>Líderes en Transporte Vertical</h2>
+							<p class="text-center">Instalación y Mantenimiento de Ascensores</p>
 						</div>
 					</div>
 				</div>

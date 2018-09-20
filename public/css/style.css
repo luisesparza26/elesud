@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
 @font-face {
 	font-family: 'digital-clock-font';
 	src: url(../fonts/digital.ttf);
@@ -49,16 +50,10 @@ hr[role="back"] {
 	background-color: #3d58a1;
 	display: block;
 }
-.btn-secondary {
-	transform: scale(1.05)
-}
 #menu .navbar-brand img {
 	width: 300px;
 }
-#menu .logo-fix {
-	display: none;
-}
-#menu .menu {
+#menu .bg-trans, #menu .menu {
 	display: none;
 }
 #menu .menu .line {
@@ -90,7 +85,7 @@ hr[role="back"] {
 #menu .navbar-collapse {
 	background-color: #343a40;
 }
-#index .nav .js-scroll-trigger {
+#btn-elesud .nav .js-scroll-trigger {
 	font-size: 14px;
 	font-weight: 400;
 	font-family: 'Quicksand', sans-serif;
@@ -101,13 +96,13 @@ hr[role="back"] {
 	margin: 1.1rem auto;
 	margin-left: 60px;
 }
-#index .nav .js-scroll-trigger:hover {
+#btn-elesud .nav .js-scroll-trigger:hover {
 	color: #c0bfba;
 	transition: .5s;
 }
-#index .nav .js-scroll-trigger::before {
+#btn-elesud .nav .js-scroll-trigger::before {
 	content: "" attr(numero)"";
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-family: 'digital-clock-font';
 	font-weight: 900;
 	letter-spacing: 2px;
@@ -127,12 +122,12 @@ hr[role="back"] {
 	border: solid #B8B8B8 2px;
 	border-radius: 50%;
 }
-#index .js-scroll-trigger:hover:nth-child(2)::before, #index .js-scroll-trigger:hover:nth-child(3)::before, #index .js-scroll-trigger:hover:nth-child(4)::before, #index .js-scroll-trigger:hover:nth-child(5)::before, #index .js-scroll-trigger:hover:nth-child(6)::before, #index .js-scroll-trigger:hover:nth-child(7)::before, #index .js-scroll-trigger:hover:nth-child(8)::before {
+#btn-elesud .js-scroll-trigger:hover:nth-child(2)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(3)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(4)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(5)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(6)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(7)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(8)::before {
 	transition: .6s ease-in-out;
 	color: #3d58a1 !important;
 	border: solid #3d58a1 2px;
 }
-#index .btn-elesud input {
+#btn-elesud input {
 	margin-left: 5px;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
@@ -150,7 +145,7 @@ hr[role="back"] {
 	min-height: 100vh;
 	max-height: 100%;
 }
-#index .section-index:nth-child(3) {
+#index .section-index:nth-child(2) {
 	background-image: url(../img/index/06.jpg);
 	background-attachment: fixed;
 	background-position: center;
@@ -158,10 +153,10 @@ hr[role="back"] {
 	background-size: cover;
 	min-height: inherit;
 }
-#index .section-index:nth-child(4) {
+#index .section-index:nth-child(3) {
 	min-height: inherit;
 }
-#index .section-index:nth-child(5) {
+#index .section-index:nth-child(4) {
 	background-image: url(../img/index/01.jpg);
 	background-attachment: fixed;
 	background-position: center;
@@ -169,7 +164,7 @@ hr[role="back"] {
 	background-size: cover;
 	min-height: inherit;
 }
-#index .section-index:nth-child(7) {
+#index .section-index:nth-child(6) {
 	background-image: url(../img/index/04.jpg);
 	background-attachment: fixed;
 	background-position: center;
@@ -177,7 +172,7 @@ hr[role="back"] {
 	background-size: cover;
 	min-height: inherit;
 }
-#index .btn-elesud {
+#btn-elesud {
 	position: fixed;
 	z-index: 1000;
 	margin-left: 5px;
@@ -204,22 +199,27 @@ hr[role="back"] {
 	left: 0;
 	background-color: rgba(0,0,0,0.78);
 }
+#home h2, #home p {
+	font-family: 'Oswald', sans-serif;
+}
 #home h2 {
 	background-color: #3d58a1;
 	display: block;
+	border-radius: 5px;
 	padding: .5rem;
-	width: 65%;
+	width: 50%;
 	color: #FFF;
 	margin: auto;
 }
 #home p {
 	color: #FFF;
+	letter-spacing: 1px;
 	padding: 2rem 0;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 }
 #home .home-content img {
 	width: 100%;
-	max-width: 700px;
+	max-width: 550px;
 }
 #about h2, #about .container h3, #about .container p {
 	color: #FFF;
@@ -227,7 +227,7 @@ hr[role="back"] {
 #products .news-card {
 	margin: 0.5rem;
 	position: relative;
-	height: 10rem;
+	height: 15rem;
 	overflow: hidden;
 	border-radius: .2rem;
 }
@@ -263,14 +263,14 @@ hr[role="back"] {
 	transition: background-color 1.5s ease;
 }
 #products .card-title {
-    display: flex;
-    align-items: center;
-    color: #FFF !important;
-    padding: 1rem .5rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-align: right;
-    transition: color 1s ease;
+	display: flex;
+	align-items: center;
+	color: #FFF !important;
+	padding: 1rem .5rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: right;
+	transition: color 1s ease;
 }
 #products .card-more {
 	max-height: 0;
@@ -349,7 +349,7 @@ hr[role="back"] {
 }
 
 @media (min-width: 1050px) {
-#index .nav .js-scroll-trigger {
+#btn-elesud .nav .js-scroll-trigger {
 	margin-left: 65px;
 }
 }
@@ -379,6 +379,12 @@ hr[role="back"] {
 }
 }
 
+@media (max-width: 480px) {
+#home h2 {
+	font-size: 1.5rem !important;
+}
+}
+
 @media (max-width: 540px) {
 h2 {
 	font-size: 2rem;
@@ -396,6 +402,11 @@ h2 {
 	width: 200px !important;
 	margin: 1rem auto;
 }
+#home .home-content img {
+	width: 100%;
+	padding: 1rem;
+	max-width: 700px;
+}
 }
 
 @media (max-width: 991px) {
@@ -409,7 +420,7 @@ p {
 #index {
 	text-align: center;
 }
-#index .btn-elesud {
+#btn-elesud {
 	display: none;
 }
 #index .index-content {
@@ -417,6 +428,9 @@ p {
 }
 #home h2 {
 	font-size: 2rem;
+	width: 95% !important;
+	padding: .5rem 1rem;
+}
 }
 #home p {
 	font-size: 1rem;
@@ -432,5 +446,4 @@ hr[role="back"] {
 }
 #services .content-btn {
 	text-align: center !important;
-}
 }
