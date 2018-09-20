@@ -14,9 +14,10 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
 	<link rel="stylesheet" href="{{asset('css/animate.css')}}" type="text/css">
-	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
-
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> 
+</head>
 <body>
+	@include('btn-elevator')
 	@include ('partials.nav-trans')
 	@yield('content')
 	<section id="contact" class="section-index">

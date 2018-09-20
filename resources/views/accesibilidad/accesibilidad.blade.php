@@ -1,11 +1,13 @@
-@extends( 'page' )@section( 'title' )Accesibilidad @endsection @section( 'content' )
-	<div id="accesibilidad">
+@extends( 'page' )
+@section( 'title' )Accesibilidad @endsection 
+@section( 'content' )
+	<div id="products-all" class="container">
 		<h2>Accesibilidad</h2>
 		<hr role="sub">
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
 				<a href="{{ url('/accesibilidad/alpha') }}">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/alpha/alpha-02.jpg') }}" alt="alpha">
 						<div class="card-body">
 							<h3>Alpha</h3>
@@ -16,7 +18,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a href="{{ url('/accesibilidad/prueba') }}">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/delta/delta-02.jpg') }}" alt="delta">
 						<div class="card-body">
 							<h3>Delta</h3>
@@ -27,7 +29,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/ikaros/ikaros-02.jpg') }}" alt="ikaros">
 						<div class="card-body">
 							<h3>Ikaros</h3>
@@ -36,11 +38,20 @@
 					</div>
 				</a>
 			</div>
-		</div>
-		<div class="row">
 			<div class="col-lg-4 col-md-6">
 				<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
+						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/alpin/alpin-02.jpg') }}" alt="alpin">
+						<div class="card-body">
+							<h3>alpin</h3>
+							<p class="card-text">La plataforma salvaescalera Ikarus es la unica plataforma en el mundo para escaleras que cambian la inclinación. Al cambiar la altura de las escaleras la plataforma se ajusta automáticamente su nivel.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<a href="">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/omega/omega-02.jpg') }}" alt="omega">
 						<div class="card-body">
 							<h3>omega</h3>
@@ -62,7 +73,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 			<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/public/public-02.jpg') }}" alt="public">
 						<div class="card-body">
 							<h3>public</h3>
@@ -71,11 +82,9 @@
 					</div>
 				</a>
 			</div>
-		</div>
-		<div class="row">
 			<div class="col-lg-4 col-md-6">
 			<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/sa3/sa3-02.jpg') }}" alt="sa3">
 						<div class="card-body">
 							<h3>sa3</h3>
@@ -86,7 +95,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 			<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/stairmax/stairmax-02.jpg') }}" alt="stairmax">
 						<div class="card-body">
 							<h3>stairmax</h3>
@@ -97,7 +106,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/stratos/stratos-02.jpg') }}" alt="stratos">
 						<div class="card-body">
 							<h3>stratos</h3>
@@ -109,31 +118,23 @@
 		</div>
 	</div>
 <style>
-	#accesibilidad {
-		margin: 4rem 0;
-		padding: 2rem;
-		max-width: 1500px;
+	#products-all {
+		margin: 4rem auto;
 	}
 	
-	#accesibilidad a {
+	#products-all a {
 		text-decoration: none;
 	}
-	
-	#accesibilidad .card {
-		border: none;
-	}
-	
-	#accesibilidad .card-body {
-		border: solid 1px #777 !important;
+	#products-all .card-body {
 		height: 300px;
 	}
 	
-	#accesibilidad .card-body h3 {
+	#products-all .card-body h3 {
 		color: #3d58a1;
 		text-transform: uppercase;
 	}
 	
-	#accesibilidad .card-body p {
+	#products-all .card-body p {
 		font-size: 1rem;
 		text-align: left !important;
 		max-height: 600px;

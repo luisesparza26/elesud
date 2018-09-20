@@ -4,22 +4,12 @@ $(window).resize(controlCabecera);
 function controlCabecera() {
 		'use strict';
     var scrollY = $(document).scrollTop();
-    if (scrollY > 200) {
+    if (scrollY > 350) {
         $('.bg-trans').removeClass('bg-transparent');
+		$('.bg-trans ').fadeIn("slow");
     } else {
         $('.bg-trans').addClass('bg-transparent');
-    }
-}
-$(document).ready(logoFix);
-$(document).scroll(logoFix);
-$(window).resize(logoFix);
-function logoFix() {
-		'use strict';
-    var scrollY = $(document).scrollTop();
-    if (scrollY > 200) {
-        $('.brand-trans').removeClass('logo-fix');
-    } else {
-        $('.brand-trans').addClass('logo-fix');
+		$('.bg-trans').fadeOut("slow");
     }
 }
 $(document).ready(function () {
@@ -81,6 +71,7 @@ $(document).ready(function () {
 	});
 });
 (function(d, s, id) {
+		'use strict';
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
