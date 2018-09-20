@@ -24,3 +24,5 @@ Route::get('/accesibilidad', 'Web\AccesibilidadController@accesibilidad');
 
 
 
+Route::get('/crear_productos','Admin\ProductController@create')->name('crear');
+Route::post('/crear_productos','Admin\ProductController@store')->name('store');
