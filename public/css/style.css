@@ -350,6 +350,51 @@ hr[role="back"] {
 }
 #projects .projects-p ul {
 	color: #FFF;
+	list-style: none;
+	padding: 0;
+}
+#contact .map-responsive {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+#contact .map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#products-all {
+	margin: 5rem auto;
+}
+#products-all a {
+	text-decoration: none;
+}
+#products-all h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#products-all .card-body {
+	height: 300px;
+}
+#products-all .card-body h3 {
+	color: #3d58a1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+#products-all .card-body p {
+	font-size: 1rem;
+	text-align: left !important;
+	max-height: 600px;
+	color: #000;
 }
 
 @media (min-width: 1050px) {
@@ -367,6 +412,12 @@ hr[role="back"] {
 @media (min-width: 900px) {
 #products .news-card {
 	height: 18rem
+}
+}
+
+@media (min-width: 1110px) {
+.dark-container {
+	display: inherit !important;
 }
 }
 
@@ -448,5 +499,17 @@ p {
 }
 hr[role="back"] {
 	margin: auto;
+}
+}
+
+@media (max-width: 1235px) {
+#products-all .card-body {
+	height: 250;
+}
+#products-all .card-body h3 {
+	font-size: 1rem;
+}
+#products-all .card-body p {
+	font-size: .9rem;
 }
 }

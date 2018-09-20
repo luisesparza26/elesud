@@ -17,7 +17,6 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
 
 <body>
-	@include('btn-elevator')
 	@include ('partials.nav-dark')
 	@yield('content')
 	<section id="contact" class="section-index">
