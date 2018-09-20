@@ -70,7 +70,13 @@
 						</div>
 					</div>
 					<div class="col-lg-6 py-3">
-						<div class="fb-page" data-href="https://www.facebook.com/ELESUDPERU" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ELESUDPERU" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ELESUDPERU">Elevadores Sudamericanos</a></blockquote></div>
+						<div class="contact-layer">
+							<p><img class="mr-2" src="{{ asset('img/index/email.svg') }}" alt="icon" width="30">ventas@elesud.com</p>
+							<p><img class="mr-2" src="{{ asset('img/index/phone.svg') }}" alt="icon" width="30">(+51) 975148573</p>
+							<p><img class="mr-2" src="{{ asset('img/index/map.svg') }}" alt="icon" width="30">Víctor Maurtua 166, LIMA 18</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9307751752735!2d-77.01556568580192!3d-12.11688899142063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c914b4a64b8b%3A0xf92e1fca8fcb661b!2sElevadores+Sudamericanos+S.A.C!5e0!3m2!1ses!2spe!4v1537468818065" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="fb-page" data-href="https://www.facebook.com/ELESUDPERU" data-tabs="timeline" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ELESUDPERU" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ELESUDPERU">Elevadores Sudamericanos</a></blockquote></div>
 					</div>
 				</div>
 			</div>

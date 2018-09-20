@@ -284,6 +284,10 @@ hr[role="back"] {
 	font-size: .8rem;
 	text-transform: uppercase;
 }
+#products .news-card:hover .card-more {
+	max-height: 20rem;
+	opacity: 1;
+}
 #products .news-card:hover .card-text {
 	background-color: rgba(0, 0, 0, 0.6);
 }
@@ -361,10 +365,6 @@ hr[role="back"] {
 }
 
 @media (min-width: 900px) {
-#products .news-card:hover .card-more {
-	max-height: 20rem;
-	opacity: 1;
-}
 #products .news-card {
 	height: 18rem
 }
@@ -413,10 +413,6 @@ h2 {
 p {
 	text-align: center !important;
 }
-#menu .menu {
-	display: block;
-	cursor: pointer;
-}
 #index {
 	text-align: center;
 }
@@ -438,14 +434,19 @@ p {
 #products .card-title {
 	font-size: 1rem;
 }
-hr[role="back"] {
-	margin: auto;
-}
 #services .content-btn {
 	text-align: center !important;
 }
+
 @media (max-width: 1110px) {
-	#btn-elesud {
+#menu .menu {
+	display: block;
+	cursor: pointer;
+}
+#btn-elesud {
 	display: none;
+}
+hr[role="back"] {
+	margin: auto;
 }
 }

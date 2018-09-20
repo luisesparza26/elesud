@@ -61,7 +61,7 @@
 							<div class="card-text">
 								<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/accessibility.svg') }}" alt="icon" width="30">Accesibilidad</h2>
 								<div class="card-more">
-									<button class="btn btn-secondary"><a href="{{ url('accesibilidad') }}">Ver más</a></button>
+									<a class="btn btn-secondary" href="{{ url('accesibilidad') }}">Ver más</a>
 								</div>
 							</div>
 						</div>
@@ -72,7 +72,7 @@
 							<div class="card-text">
 								<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/escalator.svg') }}" alt="icon" width="30">Escaleras y rampas</h2>
 								<div class="card-more">
-									<button class="btn btn-secondary"><a href="{{ url('escaleras-y-rampas') }}">Ver más</a></button>
+									<a class="btn btn-secondary" href="{{ url('escaleras') }}">Ver más</a>
 								</div>
 							</div>
 						</div>
@@ -84,7 +84,7 @@
 								<div class="card-text">
 									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/elevator.svg') }}" alt="icon" width="30">Ascensores</h2>
 									<div class="card-more">
-										<button class="btn btn-secondary"><a href="{{ url('ascensores') }}">Ver más</a></button>
+										<a class="btn btn-secondary" href="{{ url('ascensores') }}">Ver más</a>
 									</div>
 								</div>
 							</div>
@@ -95,7 +95,7 @@
 								<div class="card-text">
 									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/construction.svg') }}" alt="icon" width="30">Elevadores para construcción</h2>
 									<div class="card-more">
-										<button class="btn btn-secondary"><a href="{{ url('elevadores-para-construccion') }}">Ver más</a></button>
+										<a class="btn btn-secondary" href="{{ url('construccion') }}">Ver más</a>
 									</div>
 								</div>
 							</div>
@@ -106,7 +106,7 @@
 								<div class="card-text">
 									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/industrial.svg') }}" alt="icon" width="30">Ascensores Industriales</h2>
 									<div class="card-more">
-										<button class="btn btn-secondary"><a href="{{ url('ascensores-industriales') }}">Ver más</a></button>
+										<a class="btn btn-secondary" href="{{ url('industriales') }}">Ver más</a>
 									</div>
 								</div>
 							</div>

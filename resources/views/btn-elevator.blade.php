@@ -1,7 +1,7 @@
 <div id="btn-elesud">
 	<div class="nav  flex-column align-items-start">
 		<input class="mb-3" type="text" id="panel" readonly disabled>
-		<a id="homebtn" class="js-scroll-trigger" href="{{ url('/#about') }}" value="I" numero="6">Inicio</a>
+		<a id="homebtn" class="js-scroll-trigger" href="#about" value="I" numero="6">Inicio</a>
 		<a id="aboutbtn" class="js-scroll-trigger" href="#about" value="N" numero="5">Nosotros</a>
 		<a id="productsbtn" class="js-scroll-trigger" href="#products" value="P" numero="4">Productos</a>
 		<a id="servicesbtn" class="js-scroll-trigger" href="#services" value="S" numero="3">Servicios</a>
