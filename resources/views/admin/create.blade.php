@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
 </head>
 <body>
-
+<h1 class="text-center">Bienvenido</h1>
 	<div class="container mx-auto">
 		{!! Form::open(['route' => 'store']) !!}
 
