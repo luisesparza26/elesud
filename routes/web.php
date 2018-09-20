@@ -15,7 +15,7 @@
 Route::get('/', 'Web\PageController@inicio');
 
 //Accesibilidad
-Route::get('/accesibilidad', 'Web\PageController@accesibilidad');
+Route::get('/accesibilidad', 'Web\AccesibilidadController@accesibilidad');
 
 
 

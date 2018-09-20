@@ -38,7 +38,7 @@ hr[role="sub"] {
 	border: 0px solid;
 	height: 3px;
 	background-color: #3d58a1;
-	margin: .5rem auto 4rem;
+	margin: .5rem auto 2rem;
 	display: block;
 }
 hr[role="back"] {
@@ -227,7 +227,7 @@ hr[role="back"] {
 #products .news-card {
 	margin: 0.5rem;
 	position: relative;
-	height: 12rem;
+	height: 10rem;
 	overflow: hidden;
 	border-radius: .2rem;
 }
@@ -255,7 +255,6 @@ hr[role="back"] {
 #products .card-text {
 	position: absolute;
 	bottom: 0rem;
-	padding-top: .5rem;
 	padding-bottom: 1rem;
 	padding-right: 1rem;
 	width: 100%;
@@ -264,15 +263,14 @@ hr[role="back"] {
 	transition: background-color 1.5s ease;
 }
 #products .card-title {
-	display: flex;
-	align-items: center;
-	color: #FFF !important;
-	margin: 0;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	text-align: right;
-	transition: color 1s ease;
-	margin-bottom: 1rem 0;
+    display: flex;
+    align-items: center;
+    color: #FFF !important;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: right;
+    transition: color 1s ease;
 }
 #products .card-more {
 	max-height: 0;
@@ -368,7 +366,7 @@ hr[role="back"] {
 	opacity: 1;
 }
 #products .news-card {
-	height: 20rem
+	height: 18rem
 }
 }
 

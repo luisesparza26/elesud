@@ -5,9 +5,9 @@ function controlCabecera() {
 		'use strict';
     var scrollY = $(document).scrollTop();
     if (scrollY > 200) {
-        $('#menu').removeClass('bg-transparent');
+        $('.bg-trans').removeClass('bg-transparent');
     } else {
-        $('#menu').addClass('bg-transparent');
+        $('.bg-trans').addClass('bg-transparent');
     }
 }
 $(document).ready(logoFix);
@@ -17,9 +17,9 @@ function logoFix() {
 		'use strict';
     var scrollY = $(document).scrollTop();
     if (scrollY > 200) {
-        $('.navbar-brand').removeClass('logo-fix');
+        $('.brand-trans').removeClass('logo-fix');
     } else {
-        $('.navbar-brand').addClass('logo-fix');
+        $('.brand-trans').addClass('logo-fix');
     }
 }
 $(document).ready(function () {

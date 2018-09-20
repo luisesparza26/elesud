@@ -33,7 +33,7 @@
 				<div class="p-4 text-about">
 					<h2 class="wow fadeInRight">Nosotros</h2>
 					<hr role="sub">
-					<div class="row align-items-center">
+					<div class="row align-items-center pt-5">
 						<div class="col-lg-9">
 							<p>Somos una empresa formada por capitales peruanos, responsable del cumplimiento de las leyes nacionales en transporte vertical, ofreciendo equipos que cumplen con las normativas nacionales e internacionales de equipos de elevación, con el objetivo de garantizar la seguridad de los usuarios. <br><br>Cumplimos con Norma A120 para personas discapacitadas y Reglamento Nacional de Edificaciones - Sección Transporte Mecánico. Contamos con Certificaciones <b>ISO 9001 - Calidad</b>.</p>
 						</div>
@@ -66,29 +66,31 @@
 				<h2 class="wow fadeInLeft">Productos</h2>
 				<hr role="sub">
 				<p class="py-4 text-center">Conozca nuestra amplia gama de productos</p>
-				<div class="products-container row">
-					<div class=".col-lg-12 news-card wow slideInDown">
-						<img src="{{ asset('img/products/accessibility.jpg') }}" alt="accessibility" class="products-img">
-						<div class="card-text">
-							<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/accessibility.svg') }}" alt="icon" width="30">Accesibilidad</h2>
-							<div class="card-more">
-								<button class="btn btn-secondary"><a href="{{ url('accesibilidad') }}">Ver más</a></button>
-							</div>
-						</div>
-					</div>
-					<div class="row mx-0">
-						<div class="col-md-6 p-0 wow fadeInLeft">
-							<div class="news-card">
-								<img src="{{ asset('img/products/escalator.jpg') }}" alt="" class="products-img">
-								<div class="card-text">
-									<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/escalator.svg') }}" alt="icon" width="30">Escaleras y rampas</h2>
-									<div class="card-more">
-										<button class="btn btn-secondary"><a href="{{ url('escaleras-y-rampas') }}">Ver más</a></button>
-									</div>
+				<div class="products-container row mx-0">
+					<div class="col-md-6 p-0 wow slideInDown">
+						<div class="news-card">
+							<img src="{{ asset('img/products/accessibility.jpg') }}" alt="accessibility" class="products-img">
+							<div class="card-text">
+								<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/accessibility.svg') }}" alt="icon" width="30">Accesibilidad</h2>
+								<div class="card-more">
+									<button class="btn btn-secondary"><a href="{{ url('accesibilidad') }}">Ver más</a></button>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 p-0 wow slideInRight">
+					</div>
+					<div class="col-md-6 p-0 wow fadeInLeft">
+						<div class="news-card">
+							<img src="{{ asset('img/products/escalator.jpg') }}" alt="" class="products-img">
+							<div class="card-text">
+								<h2 class="card-title"><img class="mx-2" src="{{ asset('img/products/escalator.svg') }}" alt="icon" width="30">Escaleras y rampas</h2>
+								<div class="card-more">
+									<button class="btn btn-secondary"><a href="{{ url('escaleras-y-rampas') }}">Ver más</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products-container row mx-0">
+						<div class="col-lg-4 col-md-6 p-0 wow slideInRight">
 							<div class="news-card">
 								<img src="{{ asset('img/products/passenger.jpg') }}" alt="" class="products-img">
 								<div class="card-text">
@@ -99,7 +101,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 p-0 wow slideInUp">
+						<div class="col-lg-4 col-md-6 p-0 wow slideInUp">
 							<div class="news-card">
 								<img src="{{ asset('img/products/construction.jpg') }}" alt="" class="products-img">
 								<div class="card-text">
@@ -110,7 +112,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 p-0 wow slideInUp">
+						<div class="col-lg-4 col-md-6 p-0 wow slideInUp">
 							<div class="news-card">
 								<img src="{{ asset('img/products/industrial.jpg') }}" alt="" class="products-img">
 								<div class="card-text">
@@ -129,8 +131,10 @@
 			<div class="container">
 				<h2 class="wow fadeInRight">Servicios</h2>
 				<hr role="sub">
-				<p>Ofrecemos a nuestros clientes la más amplia gama de servicios de mantenimiento de elevadores de acuerdo a la normativa vigente y enfocados a la seguridad y la eficiencia energética: mantenimiento preventivo, correctivo, instalación y montaje, revisión de los componentes de seguridad y sistemas de alarma.</p>
-				<p>Para garantizar la calidad de nuestro servicio contamos con un equipo de profesionales altamente cualificados, amplia infraestructura y una atención 24 horas durante todo el año.</p>
+				<div class="pt-5">
+					<p>Ofrecemos a nuestros clientes la más amplia gama de servicios de mantenimiento de elevadores de acuerdo a la normativa vigente y enfocados a la seguridad y la eficiencia energética: mantenimiento preventivo, correctivo, instalación y montaje, revisión de los componentes de seguridad y sistemas de alarma.</p>
+					<p>Para garantizar la calidad de nuestro servicio contamos con un equipo de profesionales altamente cualificados, amplia infraestructura y una atención 24 horas durante todo el año.</p>
+				</div>
 				<div class="row py-5">
 					<div class="col-xl-7 col-md-6">
 						<div class="card pb-2 my-3 wow slideInLeft">
@@ -191,19 +195,21 @@
 			<div class="container">
 				<h2 class="wow fadeInLeft">Representamos a las mejores marcas del mundo</h2>
 				<hr role="sub">
-				<p>Ser especialistas en trasporte vertical y con más de 15 años de experiencia en el rubro, nos ha permitido seleccionar a las mejores marcas para cada aplicación a nivel mundial.</p>
-				<div class="row align-items-center py-5">
-					<div class="col-md-3 col-sm-6">
-						<img class="w-100" src="{{ asset('img/brands/koyo.png') }}" alt="Representaciones">
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<img class="w-100" src="{{ asset('img/brands/lehner.png') }}" alt="Representaciones">
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<img class="w-100" src="{{ asset('img/brands/alimak.png') }}" alt="Representaciones">
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<img class="w-100" src="{{ asset('img/brands/hidral.png') }}" alt="Representaciones">
+				<div class="py-5">
+					<p>Ser especialistas en trasporte vertical y con más de 15 años de experiencia en el rubro, nos ha permitido seleccionar a las mejores marcas para cada aplicación a nivel mundial.</p>
+					<div class="row align-items-center py-5">
+						<div class="col-md-3 col-sm-6">
+							<img class="w-100" src="{{ asset('img/brands/koyo.png') }}" alt="Representaciones">
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<img class="w-100" src="{{ asset('img/brands/lehner.png') }}" alt="Representaciones">
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<img class="w-100" src="{{ asset('img/brands/alimak.png') }}" alt="Representaciones">
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<img class="w-100" src="{{ asset('img/brands/hidral.png') }}" alt="Representaciones">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -228,7 +234,7 @@
 					</div>
 				</div>
 				<div class="projects-p py-3">
-					<h3>Proyectos en ejecución</h3>
+					<h3>Otros proyectos ejecutados</h3>
 					<ul>
 						<li>CLINICA PRIVADA “NOVA CLINIC”</li>
 						<li>COLEGIO GALILEO </li>
