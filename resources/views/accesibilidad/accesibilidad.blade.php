@@ -1,10 +1,10 @@
-@extends( 'pagelayout' )@section( 'title' )Accesibilidad @endsection @section( 'content' )
+@extends( 'page' )@section( 'title' )Accesibilidad @endsection @section( 'content' )
 	<div id="accesibilidad">
 		<h2>Accesibilidad</h2>
 		<hr role="sub">
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
-				<a href="{{ url('/silla-curva') }}">
+				<a href="{{ url('/accesibilidad/alpha') }}">
 					<div class="card py-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/alpha/alpha-02.jpg') }}" alt="alpha">
 						<div class="card-body">
@@ -15,7 +15,7 @@
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<a href="">
+				<a href="{{ url('/accesibilidad/prueba') }}">
 					<div class="card py-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/delta/delta-02.jpg') }}" alt="delta">
 						<div class="card-body">

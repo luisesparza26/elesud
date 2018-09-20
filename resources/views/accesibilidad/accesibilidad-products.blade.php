@@ -6,5 +6,12 @@
 </head>
 
 <body>
+	{{ 'img/accesibilidad/'.$product->imagen_1 }} <br>
+	{{ 'img/accesibilidad/'.$product->imagen_2 }} <br>
+	{{ 'img/accesibilidad/'.$product->imagen_3 }} <br>
+	{{ 'img/accesibilidad/'.$product->titulo }} <br>
+	{{ 'img/accesibilidad/'.$product->subtitulo }} <br>
+	{{ 'img/accesibilidad/'.$product->descripcion }} <br>
+	{{ 'img/accesibilidad/'.$product->especificaciones }}
 </body>
 </html>
