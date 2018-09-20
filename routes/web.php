@@ -63,7 +63,6 @@ Route::get('/silla-curva', 'Web\SillasController@silla_curva');
 Route::get('/silla-recta', 'Web\SillasController@silla_recta');
 Route::get('/silla-salvaescaleras', 'Web\SillasController@silla_salvaescaleras');
 
-//Rutas Marcas
 
 
 

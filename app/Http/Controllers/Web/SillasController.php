@@ -9,7 +9,7 @@ class SillasController extends Controller
 {
     public function silla_curva(){
     	$meta = [
-			"url" => "www.elesud.com/silla-curva",
+			"url" => "www.elesud.com/accesibilidad/silla-curva",
 			"type" => "website",
 			"title" => "Elesud - Sillas",
 			"description" => "#",
