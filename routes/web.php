@@ -47,6 +47,9 @@ Route::get('/escaleras-publicas', 'Web\EscalerasController@escaleras_publicas');
 
 //Rutas Orugas
 Route::get('/orugas', 'Web\OrugasController@orugas');
+Route::get('/sa3-sa-s', 'Web\OrugasController@s3sa');
+Route::get('/stairmax', 'Web\OrugasController@stairmax');
+
 
 //Rutas Plataformas
 Route::get('/plataforma-delta', 'Web\PlataformasController@plataforma_delta');
@@ -56,13 +59,11 @@ Route::get('/plataforma-stratos', 'Web\PlataformasController@plataforma_stratos'
 Route::get('/plataformas-verticales', 'Web\PlataformasController@plataformas_verticales');
 
 //Rutas Sillas
-Route::get('/silla-curva', 'Web\PageController@inicio');
-Route::get('/silla-recta', 'Web\PageController@inicio');
-Route::get('/silla-salvaescaleras', 'Web\PageController@inicio');
+Route::get('/silla-curva', 'Web\SillasController@silla_curva');
+Route::get('/silla-recta', 'Web\SillasController@silla_recta');
+Route::get('/silla-salvaescaleras', 'Web\SillasController@silla_salvaescaleras');
 
 //Rutas Marcas
-Route::get('/sa3-sa-s', 'Web\PageController@inicio');
-Route::get('/stairmax', 'Web\PageController@inicio');
 
 
 
