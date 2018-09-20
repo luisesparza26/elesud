@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use PHPMailerAutoload;
-use PHPMailer; 
+use PHPMailer\PHPMailer\PHPMailer;
 
 class ContactController extends Controller {
     
@@ -15,13 +14,13 @@ class ContactController extends Controller {
 		try {
 		$mail->isSMTP(); // tell to use smtp
 		$mail->CharSet = "utf-8"; // set charset to utf8
-		$mail->Host = $_SERVER['localhost'];
+		$mail->Host = 'localhost';
 		$mail->SMTPAuth = false;
 		$mail->SMTPSecure = false;
 		$mail->Port = 25; // most likely something different for you. This is the mailtrap.io port i use for testing. 
-		$mail->Username = "";
+		$mail->Username = "root";
 		$mail->Password = "";
-		$mail->setFrom("example@gmail.com", "examle Team");
+		$mail->setFrom("ep.luisjesus@gmail.com", "examle Team");
 		$mail->Subject = "examle";
 		$mail->MsgHTML("This is a test new test ");
 		$mail->addAddress("ep.luisjesus@gmail.com", "admin");
@@ -39,11 +38,11 @@ class ContactController extends Controller {
 
 		$mail->send();
 		} catch (phpmailerException $e) {
-		echo $e;
+		return $e;
 		} catch (Exception $e) {
-		echo $e;
+		return $e;
 		}
-		return success;
+		return 'Enviado con exito';
 		    }
 
 }

@@ -11,15 +11,20 @@
 |
 */
 
+
+//Contacto
+Route::post('/contacto','ContactController@contact')->name('contact');
+
 //Rutas Principales
 Route::get('/', 'Web\PageController@inicio');
+
+
 
 //Accesibilidad
 Route::get('/accesibilidad/{producto}','Web\AccesibilidadController@show');
 Route::get('/accesibilidad', 'Web\AccesibilidadController@accesibilidad');
 
-//Contacto
-Route::post('/contact','ContactController@contact')->name('contacto');
+
 
 
 
