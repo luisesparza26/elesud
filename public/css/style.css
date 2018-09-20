@@ -88,7 +88,7 @@ hr[role="back"] {
 	font-family: 'Quicksand', sans-serif;
 }
 #menu .navbar-collapse {
-	background-color: #343a40 ;
+	background-color: #343a40;
 }
 #index .nav .js-scroll-trigger {
 	font-size: 14px;
@@ -98,8 +98,8 @@ hr[role="back"] {
 	color: transparent;
 	text-decoration: none;
 	align-items: center;
-	margin: .8rem auto;
-	margin-left: 50px;
+	margin: 1.1rem auto;
+	margin-left: 60px;
 }
 #index .nav .js-scroll-trigger:hover {
 	color: #c0bfba;
@@ -116,9 +116,9 @@ hr[role="back"] {
 	left: 5px;
 	justify-content: center;
 	align-items: center;
-	width: 35px;
 	padding: 5px;
-	height: 35px;
+	width: 50px;
+	height: 50px;
 	background-image: url(../img/index/btn-panel.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -133,13 +133,13 @@ hr[role="back"] {
 	border: solid #3d58a1 2px;
 }
 #index .btn-elesud input {
-	border-radius: 2px;
 	margin-left: 5px;
 	font-size: 1.2rem;
 	letter-spacing: 1px;
 	text-align: center;
-	width: 35px;
-	height: 35px;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
 	background-color: #000;
 	color: #12E00A;
 	font-family: 'digital-clock-font';
@@ -181,7 +181,7 @@ hr[role="back"] {
 	position: fixed;
 	z-index: 1000;
 	margin-left: 5px;
-	margin-top: 15%;
+	margin-top: 10%;
 }
 #home .video-bg {
 	position: absolute;
@@ -205,19 +205,19 @@ hr[role="back"] {
 	background-color: rgba(0,0,0,0.78);
 }
 #home h2 {
-background-color: #3d58a1;
-    display: block;
-    padding: .5rem;
-    width: 65%;
-    color: #FFF;
-    margin: auto;
+	background-color: #3d58a1;
+	display: block;
+	padding: .5rem;
+	width: 65%;
+	color: #FFF;
+	margin: auto;
 }
 #home p {
 	color: #FFF;
-		padding: 2rem 0;
+	padding: 2rem 0;
 	font-size: 1.3rem;
 }
-#home .home-content img{
+#home .home-content img {
 	width: 100%;
 	max-width: 700px;
 }
@@ -342,23 +342,26 @@ background-color: #3d58a1;
 	font-size: 1.2rem;
 	padding: 1.2rem 0;
 	font-weight: 100;
-background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #0F2027;
+	background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+	background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
 }
 #projects .projects-p ul {
 	color: #FFF;
 }
+
 @media (min-width: 1050px) {
 #index .nav .js-scroll-trigger {
-	margin-left: 50px;
+	margin-left: 65px;
 }
 }
+
 @media (min-width: 768px) {
-	#projects h4 {
-		font-size: .9rem;
-	}
+#projects h4 {
+	font-size: .9rem;
 }
+}
+
 @media (min-width: 900px) {
 #products .news-card:hover .card-more {
 	max-height: 20rem;
@@ -415,7 +418,7 @@ p {
 	margin: 0;
 }
 #home h2 {
-font-size: 2rem;
+	font-size: 2rem;
 }
 #home p {
 	font-size: 1rem;
