@@ -16,7 +16,7 @@ class AscensoresController extends Controller {
 			"image" => "#",
 		];
 
-		return view( 'accesibilidad.ascensores', [ 'meta' => $meta ] );
+		return view( 'ascensores.ascensores', [ 'meta' => $meta ] );
 	}
 
 	public function show($nombre){
@@ -30,7 +30,7 @@ class AscensoresController extends Controller {
 		
 		$product = Product::where('titulo',$nombre)->first();
 
-		return view( 'accesibilidad.ascensores-products', compact('meta','product'));
+		return view( 'ascensores.ascensores-products', compact('meta','product'));
 	}
 
 }

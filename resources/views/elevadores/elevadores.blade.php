@@ -1,12 +1,10 @@
 @extends( 'page' )
 
 @section( 'title' )
-Ascensores
+
+Elevadores 
+
 @endsection
 @section( 'content' )
-<div class="container mt-5">
-	<h1>BIENVENIDO</h1>
-
-</div>
 
 @endsection

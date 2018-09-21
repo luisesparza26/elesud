@@ -22,18 +22,27 @@ Route::get('/accesibilidad/{producto}','Web\AccesibilidadController@show');
 Route::get('/accesibilidad', 'Web\AccesibilidadController@accesibilidad');
 
 //Ascensores
-
+Route::get('/ascensores/{producto}','Web\AscensoresController@show');
+Route::get('/ascensores', 'Web\AscensoresController@ascensores');
 
 //Construccion
+Route::get('/construccion/{producto}','Web\ConstruccionController@show');
+Route::get('/construccion', 'Web\ConstruccionController@construccion');
 
+//Elevadores no hay vistas
+Route::get('/elevadores/{producto}','Web\ElevadoresController@show');
+Route::get('/elevadores', 'Web\ElevadoresController@elevadores');
 
-//Elevadores
 
 
 //Escaleras
+Route::get('/escaleras/{producto}','Web\EscalerasController@show');
+Route::get('/escaleras', 'Web\EscalerasController@escaleras');
 
 
 //Industrial
+Route::get('/industriales/{producto}','Web\IndustrialController@show');
+Route::get('/industriales', 'Web\IndustrialController@industriales');
 
 
 Route::get('/crear_productos','Admin\ProductController@create')->name('crear');
