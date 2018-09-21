@@ -5,8 +5,8 @@
 		<a id="aboutbtn" class="js-scroll-trigger" href="#about" value="N" numero="5">Nosotros</a>
 		<a id="productsbtn" class="js-scroll-trigger" href="#products" value="P" numero="4">Productos</a>
 		<a id="servicesbtn" class="js-scroll-trigger" href="#services" value="S" numero="3">Servicios</a>
-		<a id="brandsbtn" class="js-scroll-trigger" href="#brands" value="M" numero="2">Representaciones</a>
+		<a id="brandsbtn" class="js-scroll-trigger" href="#brands" value="R" numero="2">Representaciones</a>
 		<a id="projectsbtn" class="js-scroll-trigger" href="#projects" value="P" numero="1">Proyectos</a>
-		<a id="contactbtn" class="js-scroll-trigger" href="#contact" value="C" numero="S1">Contácto</a>
+		<a id="contactbtn" class="js-scroll-trigger" href="#contact" value="C" numero="">Contácto</a>
 	</div>
 </div>
