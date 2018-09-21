@@ -78,8 +78,9 @@ hr[role="back"] {
 	transform: translateY(-11px) rotate(-45deg);
 }
 #menu .navbar-nav .js-scroll-trigger {
-	font-size: .8rem;
+	font-size: .85rem;
 	text-align: center;
+	text-transform: uppercase;
 	font-family: 'Quicksand', sans-serif;
 }
 #menu .navbar-collapse {
@@ -112,8 +113,8 @@ hr[role="back"] {
 	justify-content: center;
 	align-items: center;
 	padding: 5px;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	background-image: url(../img/index/btn-panel.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -132,8 +133,8 @@ hr[role="back"] {
 	font-size: 1.2rem;
 	letter-spacing: 1px;
 	text-align: center;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	border-radius: 5px;
 	background-color: #000;
 	color: #12E00A;
@@ -350,6 +351,61 @@ hr[role="back"] {
 }
 #projects .projects-p ul {
 	color: #FFF;
+	list-style: none;
+	padding: 0;
+}
+#contact .map-responsive {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+#contact .map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#products-all {
+	margin: 5rem auto;
+}
+#products-all a {
+	text-decoration: none;
+}
+#products-all h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding: 3rem 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#products-all .card {
+	border: none;
+}
+#products-all .card-body {
+	height: 300px;
+	background: #abbaab;
+	background: -webkit-linear-gradient(to top, #ffffff, #abbaab);
+	background: linear-gradient(to top, #ffffff, #abbaab);
+}
+#products-all .card-body h3 {
+	color: #3d58a1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+#products-all .card-body p {
+	font-size: 1rem;
+	text-align: left !important;
+	max-height: 600px;
+	color: #000;
+}
+#contact .contact-layer p {
+	margin: 5px 0;
+	padding: 2px 0;
 }
 
 @media (min-width: 1050px) {
@@ -367,6 +423,12 @@ hr[role="back"] {
 @media (min-width: 900px) {
 #products .news-card {
 	height: 18rem
+}
+}
+
+@media (min-width: 1110px) {
+.dark-container {
+	display: inherit !important;
 }
 }
 
@@ -424,7 +486,6 @@ p {
 	width: 95% !important;
 	padding: .5rem 1rem;
 }
-}
 #home p {
 	font-size: 1rem;
 }
@@ -437,6 +498,7 @@ p {
 #services .content-btn {
 	text-align: center !important;
 }
+}
 
 @media (max-width: 1110px) {
 #menu .menu {
@@ -448,5 +510,17 @@ p {
 }
 hr[role="back"] {
 	margin: auto;
+}
+}
+
+@media (max-width: 1235px) {
+#products-all .card-body {
+	height: 250;
+}
+#products-all .card-body h3 {
+	font-size: 1rem;
+}
+#products-all .card-body p {
+	font-size: .9rem;
 }
 }

@@ -84,7 +84,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/elevex/elevex-02.jpg') }}" alt="elevex">
 						<div class="card-body">
 							<h3>Elevex<img src="{{ asset('img/brands/lehner.png') }}" alt="lehner" width="100" height="30"></h3>
@@ -161,50 +161,4 @@
 			</div>
 		</div>
 	</div>
-<style>
-	#products-all {
-		margin: 2rem auto;
-	}
-	
-	#products-all a {
-		text-decoration: none;
-	}
-	#products-all h1 {
-		font-size: 2.5rem;
-		font-weight: 300;
-		padding: 2rem 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	#products-all .card-body {
-		height: 300px;
-	}
-	
-	#products-all .card-body h3 {
-		color: #3d58a1;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		text-transform: uppercase;
-	}
-	
-	#products-all .card-body p {
-		font-size: 1rem;
-		text-align: left !important;
-		max-height: 600px;
-		color: #000;
-	}
-	@media (max-width: 1235px) {
-		#products-all .card-body {
-			height: 250;
-		}
-	#products-all .card-body h3 {
-		font-size: 1rem;
-	}
-		#products-all .card-body p {
-			font-size: .9rem;
-		}
-}
-</style>
 @endsection
