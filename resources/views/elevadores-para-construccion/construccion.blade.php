@@ -1,5 +1,5 @@
 @extends( 'page' )
-@section( 'title' )Elevadores para Contrucción @endsection
+@section( 'title' )Elevadores para Contruccion @endsection
 @section( 'content' )
 	<div id="products-all" class="container">
 		<h1>Elevadores para Construcción<img class="mx-2" src="{{ asset('img/products/construction-black.svg') }}" alt="icon" width="35"></h1>

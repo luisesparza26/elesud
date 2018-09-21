@@ -1,5 +1,5 @@
 @extends( 'page' )
-@section( 'title' )Elevadores para Construcción@endsection
+@section( 'title' )Elevadores para Construccion@endsection
 @section( 'content' )
 	<div id="products-detail" class="container mx-auto">
 		<div class="row">
@@ -14,7 +14,7 @@
 						<div class="carousel-item active">
 							<img class="w-100" src="{{ asset('img/products-all/construccion/'.$product->imagen_1 )}}" alt="product">
 						</div>
-<!--						<div class="carousel-item">
+						<!--<div class="carousel-item">
 							<img class="w-100" src="{{ asset('img/products-all/construccion/'.$product->imagen_2 )}}" alt="product">
 						</div>
 						<div class="carousel-item">
