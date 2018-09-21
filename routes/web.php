@@ -11,26 +11,29 @@
 |
 */
 
-
 //Contacto
 Route::post('/contacto','ContactController@contact')->name('contact');
 
 //Rutas Principales
 Route::get('/', 'Web\PageController@inicio');
 
-
-
 //Accesibilidad
 Route::get('/accesibilidad/{producto}','Web\AccesibilidadController@show');
 Route::get('/accesibilidad', 'Web\AccesibilidadController@accesibilidad');
 
+//Ascensores
 
 
+//Construccion
 
 
+//Elevadores
 
 
+//Escaleras
 
+
+//Industrial
 
 
 Route::get('/crear_productos','Admin\ProductController@create')->name('crear');

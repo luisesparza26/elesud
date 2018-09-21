@@ -1,10 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-</head>
+@extends( 'page' )
 
-<body>
-</body>
-</html>
+@section( 'title' )Ascensores Industriales@endsection
+@section( 'content' )
+
+@endsection

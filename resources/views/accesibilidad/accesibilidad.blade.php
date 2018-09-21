@@ -1,5 +1,5 @@
 @extends( 'page' )
-@section( 'title' )Accesibilidad @endsection
+@section( 'title' )Accesibilidad@endsection
 @section( 'content' )
 	<div id="products-all" class="container">
 		<h1>Accesibilidad<img class="mx-2" src="{{ asset('img/products/accessibility-black.svg') }}" alt="icon" width="35"></h1>
