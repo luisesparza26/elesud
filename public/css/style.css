@@ -78,8 +78,9 @@ hr[role="back"] {
 	transform: translateY(-11px) rotate(-45deg);
 }
 #menu .navbar-nav .js-scroll-trigger {
-	font-size: .8rem;
+	font-size: .85rem;
 	text-align: center;
+	text-transform: uppercase;
 	font-family: 'Quicksand', sans-serif;
 }
 #menu .navbar-collapse {
@@ -375,13 +376,19 @@ hr[role="back"] {
 #products-all h1 {
 	font-size: 2.5rem;
 	font-weight: 300;
-	padding: 2rem 0;
+	padding: 3rem 0 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+#products-all .card {
+	border: none;
+}
 #products-all .card-body {
 	height: 300px;
+	background: #abbaab;
+	background: -webkit-linear-gradient(to top, #ffffff, #abbaab);
+	background: linear-gradient(to top, #ffffff, #abbaab);
 }
 #products-all .card-body h3 {
 	color: #3d58a1;
@@ -395,6 +402,10 @@ hr[role="back"] {
 	text-align: left !important;
 	max-height: 600px;
 	color: #000;
+}
+#contact .contact-layer p {
+	margin: 5px 0;
+	padding: 2px 0;
 }
 
 @media (min-width: 1050px) {
@@ -475,7 +486,6 @@ p {
 	width: 95% !important;
 	padding: .5rem 1rem;
 }
-}
 #home p {
 	font-size: 1rem;
 }
@@ -487,6 +497,7 @@ p {
 }
 #services .content-btn {
 	text-align: center !important;
+}
 }
 
 @media (max-width: 1110px) {

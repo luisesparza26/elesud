@@ -84,7 +84,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a href="">
-					<div class="card py-2">
+					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/elevex/elevex-02.jpg') }}" alt="elevex">
 						<div class="card-body">
 							<h3>Elevex<img src="{{ asset('img/brands/lehner.png') }}" alt="lehner" width="100" height="30"></h3>
