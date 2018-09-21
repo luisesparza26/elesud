@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Product;
 
 class ConstruccionController extends Controller {
+	
    public function construccion() {
     	$meta = [
 			"url" => "www.elesud.com",
@@ -16,7 +17,7 @@ class ConstruccionController extends Controller {
 			"image" => "#",
 		];
 
-		return view( 'elevadores-para-construccion.construccion', [ 'meta' => $meta ] );
+		return view( 'construccion.construccion', [ 'meta' => $meta ] );
 	}
 
 	public function show($nombre){
@@ -28,8 +29,8 @@ class ConstruccionController extends Controller {
 			"image" => "#",
 		];
 		
-		$product = Product::where('titulo',$nombre)->first();
+		$product = Product::where('ruta',$nombre)->first();
 
-		return view( 'elevadores-para-construccion.construccion-products', compact('meta','product'));
+		return view( 'construccion.construccion-products', compact('meta','product'));
 	}
 }
