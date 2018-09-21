@@ -6,7 +6,7 @@
 		<hr role="sub">
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
-				<a href="">
+				<a href="{{url('/accesibilidad/omega')}}">
 					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/omega/omega-02.jpg') }}" alt="omega">
 						<div class="card-body">
@@ -17,7 +17,7 @@
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<a href="">
+				<a href="{{url('/accesibilidad/prueba')}}">
 					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/accesibilidad/stratos/stratos-02.jpg') }}" alt="stratos">
 						<div class="card-body">

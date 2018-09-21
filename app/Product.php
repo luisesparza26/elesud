@@ -8,7 +8,7 @@ class Product extends Model
 {
 	public $timestamps = false;
 
-    protected $fillable = ['imagen_1','imagen_2','imagen_3','categoria_id','titulo','subtitulo','descripcion','especificaciones'];
+    protected $fillable = ['ruta','imagen_1','imagen_2','imagen_3','categoria_id','titulo','subtitulo','descripcion','especificaciones'];
 
 
     public function categoria(){

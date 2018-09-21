@@ -29,7 +29,7 @@ class AccesibilidadController extends Controller {
 			"image" => "#",
 		];
 		
-		$product = Product::where('titulo',$nombre)->first();
+		$product = Product::where('ruta',$nombre)->first();
 
 		return view( 'accesibilidad.accesibilidad-products', compact('meta','product'));
 	}

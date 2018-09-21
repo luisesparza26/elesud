@@ -19,6 +19,11 @@
 </div>
 
 <div class="form-group">
+	{{ Form::label('ruta','Ruta') }}
+	{{ Form::text('ruta',null, ['class' => 'form-control', 'id' => 'ruta']) }}
+</div>
+
+<div class="form-group">
 	{{ Form::label('imagen_1','Imagen 1') }}
 	{{ Form::text('imagen_1',null, ['class' => 'form-control', 'id' => 'imagen_1']) }}
 </div>

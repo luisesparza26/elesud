@@ -1,13 +1,15 @@
 @extends( 'page' )
 @section( 'title' )Accesibilidad @endsection
 @section( 'content' )
-
-	{{ 'img/accesibilidad/'.$product->imagen_1 }}
-	{{ 'img/accesibilidad/'.$product->imagen_2 }}
-	{{ 'img/accesibilidad/'.$product->imagen_3 }}
-	{{ 'img/accesibilidad/'.$product->titulo }}
-	{{ 'img/accesibilidad/'.$product->subtitulo }}
-	{{ 'img/accesibilidad/'.$product->descripcion }}
-	{{ 'img/accesibilidad/'.$product->especificaciones }}
+<div class="container mt-5 mx-auto">
+	{{ 'img/products/'.$product->imagen_1 }} <br>
+	{{ 'img/products/'.$product->imagen_2 }} <br>
+	{{ 'img/products/'.$product->imagen_3 }} <br>
+	{{  $product->titulo }} <br>
+	{{  $product->subtitulo }} <br>
+	{!!  $product->descripcion !!} <br> 
+	{!!  $product->especificaciones !!}
+</div>
+	
 
 @endsection
