@@ -394,7 +394,6 @@ hr[role="back"] {
 	border: none;
 }
 #products-all .card-body {
-	height: 300px;
 	background: #abbaab;
 	background: -webkit-linear-gradient(to top, #edeff0, #abbaab);
 	background: linear-gradient(to top, #edeff0, #abbaab);
@@ -409,7 +408,6 @@ hr[role="back"] {
 #products-all .card-body p {
 	font-size: 1rem;
 	text-align: left !important;
-	max-height: 600px;
 	color: #000;
 }
 #contact .contact-layer p {

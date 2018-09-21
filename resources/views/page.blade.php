@@ -16,8 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/> </head>
 
 <body>
-	@include ('partials.nav-dark')
-	@yield('content')
+	@include ('partials.nav-dark') @yield('content')
 	<section id="contact" class="section-index">
 		<div class="container">
 			<h2>Contáctanos</h2>
