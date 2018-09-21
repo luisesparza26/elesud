@@ -25,7 +25,7 @@
 				<a class="nav-link js-scroll-trigger nav-index" href="{{ url('/#projects') }}">Proyectos</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger nav-index" href="{{ url('/#contact') }}">Contacto</a>
+				<a class="nav-link js-scroll-trigger nav-index" href="#contact">Contacto</a>
 			</li>
 		</ul>
 	</div>

@@ -8,8 +8,7 @@
 	<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{{ isset($meta['type'])?$meta['type']:'website' }}"/>
 	<meta prefix="og: http://ogp.me/ns#" name="title" property="og:title" content="{{ isset($meta['title'])?$meta['title']:'ELESUD - Elevadores Sudamericanos' }}"/>
 	<meta prefix="og: http://ogp.me/ns#" name="description" property="og:description" content="{{ isset($meta['description'])? $meta['description']:'Somos una empresa de capitales peruanos, especialistas en soluciones de transporte vertical.'}}"/>
-	<!--SUBIR IMAGEN CHULA-->
-	<meta prefix="og: http://ogp.me/ns#" name="image" property="og:image" content="{{ isset($meta['image'])?$meta['image']:'#' }}"/>
+	<meta prefix="og: http://ogp.me/ns#" name="image" property="og:image" content="{{ isset($meta['image'])?$meta['image']:'http://subirimagen.me/uploads/20180921020954.jpg' }}"/>
 	<meta prefix="og: http://ogp.me/ns#" name="author" content="Quickly LA"/>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">

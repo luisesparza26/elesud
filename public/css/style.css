@@ -88,6 +88,13 @@ hr[role="back"] {
 #menu .navbar-collapse {
 	background-color: #343a40;
 }
+#menu .social p {
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	padding: 2px 0;
+	margin: 0;
+}
 #btn-elesud .nav .js-scroll-trigger {
 	font-size: 14px;
 	font-weight: 400;
@@ -389,8 +396,8 @@ hr[role="back"] {
 #products-all .card-body {
 	height: 300px;
 	background: #abbaab;
-	background: -webkit-linear-gradient(to top, #ffffff, #abbaab);
-	background: linear-gradient(to top, #ffffff, #abbaab);
+	background: -webkit-linear-gradient(to top, #edeff0, #abbaab);
+	background: linear-gradient(to top, #edeff0, #abbaab);
 }
 #products-all .card-body h3 {
 	color: #3d58a1;
@@ -409,7 +416,26 @@ hr[role="back"] {
 	margin: 5px 0;
 	padding: 2px 0;
 }
-
+		#products-detail {
+			margin: 8rem 0 4rem;
+		}
+		#products-detail h1{
+			font-size: 2.2rem;
+			color: #3d58a1;
+		}
+		#products-detail span {
+			font-size: 1.5rem;
+			color: #000;
+		}
+		#products-detail h3 {
+			color: #777777;
+		}
+		#products-detail p {
+			text-align: left !important;
+		}
+		#products-detail .specification {
+			column-count: 2;
+		}
 @media (min-width: 1050px) {
 #btn-elesud .nav .js-scroll-trigger {
 	margin-left: 65px;
@@ -472,7 +498,12 @@ h2 {
 	max-width: 700px;
 }
 }
+@media (max-width: 650px) {
+	#menu .social  {
+display: none;
 
+}
+}
 @media (max-width: 991px) {
 p {
 	text-align: center !important;
@@ -520,7 +551,7 @@ hr[role="back"] {
 	height: 250;
 }
 #products-all .card-body h3 {
-	font-size: 1rem;
+	font-size: 1.4rem;
 }
 #products-all .card-body p {
 	font-size: .9rem;

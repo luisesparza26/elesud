@@ -29,11 +29,9 @@ Route::get('/ascensores', 'Web\AscensoresController@ascensores');
 Route::get('/construccion/{producto}','Web\ConstruccionController@show');
 Route::get('/construccion', 'Web\ConstruccionController@construccion');
 
-//Elevadores no hay vistas
+//Elevadores
 Route::get('/elevadores/{producto}','Web\ElevadoresController@show');
 Route::get('/elevadores', 'Web\ElevadoresController@elevadores');
-
-
 
 //Escaleras
 Route::get('/escaleras/{producto}','Web\EscalerasController@show');
