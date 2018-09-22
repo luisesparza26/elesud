@@ -1,12 +1,14 @@
 @extends( 'page' )
-@section( 'title' )Elevadores para Contruccion @endsection
 @section( 'content' )
 	<div id="products-all" class="container">
-		<h1>Elevadores para Construcción<img class="mx-2" src="{{ asset('img/products/construction-black.svg') }}" alt="icon" width="35"></h1>
-		<hr role="sub">
+		<div class="title-products">
+			<h1>Elevadores para Construcción<img class="mx-2" src="{{ asset('img/products/construction-black.svg') }}" alt="icon" width="35"></h1>
+			<hr role="sub">
+		</div>
+		<p class="py-4">Los elevadores de construcción para pasajeros y materiales han sido usados por más de 50 años en todo tipo de aplicaciones. El rango estándar de estos elevadores de construcción ofrece la solución de transporte óptimo para construcciones de altura baja, media y alta, de todo tipo.</p>
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
-				<a href="{{url('/construccion/alimak-sc-45-30')}}">
+				<a href="{{url('/construccion/alimak-tcl')}}">
 					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/construccion/alimak-tcl.jpg') }}" alt="alimak">
 						<div class="card-body">
@@ -28,34 +30,12 @@
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<a href="{{url('/construccion/alimak-scando-65')}}">
-					<div class="card my-2">
-						<img class="card-img-top" src="{{ asset('img/products-all/construccion/alimak-scando-65.jpg') }}" alt="alimak">
-						<div class="card-body">
-							<h3>ALIMAK SC 65<img src="{{ asset('img/brands/alimak.png') }}" alt="lehner" width="100" height="30"></h3>
-							<p class="card-text">Alimak ha llevado la tecnología de los elevadores de construcción a niveles sin precedentes con la introducción del nuevo Alimak SC 65; un sistema modular que puede adaptarse a distintas aplicaciones usando relativamente pocos módulos y componentes.</p>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-md-6">
 				<a href="{{url('/construccion/alimak-sc-45-30')}}">
 					<div class="card my-2">
 						<img class="card-img-top" src="{{ asset('img/products-all/construccion/alimak-sc-45-30.jpg') }}" alt="alimak">
 						<div class="card-body">
 							<h3>ALIMAK SC 45/30<img src="{{ asset('img/brands/alimak.png') }}" alt="lehner" width="100" height="30"></h3>
 							<p class="card-text">El elevador ALIMAK SC 45/30 está diseñado para el transporte de pasajeros y materiales. Ofrece eficiencia, seguridad, consumo reducido de energía y bajos costos de operación, por lo que es la solución ideal en elevación para empresas de construcción y alquiler.</p>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<a href="{{url('/construccion/alimak-sc-65-32')}}">
-					<div class="card my-2">
-						<img class="card-img-top" src="{{ asset('img/products-all/construccion/alimak-sc-65-32.jpg') }}" alt="alimak">
-						<div class="card-body">
-							<h3>ALIMAK SC 65/32<img src="{{ asset('img/brands/alimak.png') }}" alt="lehner" width="100" height="30"></h3>
-							<p class="card-text">El ALIMAK SC 65/32 es un polipasto de construcción de alta velocidad confiable y eficiente, que ofrece simplicidad de operación, facilidad de instalación y diseño inteligente con un bajo costo total de propiedad. ALIMAK SC 65/32 se somete a una serie de rigurosas pruebas de seguridad y calidad antes de su llegada al mercado.</p>
 						</div>
 					</div>
 				</a>
@@ -121,7 +101,7 @@
 						<img class="card-img-top" src="{{ asset('img/products-all/construccion/alimak-scando-650xl.jpg') }}" alt="alimak">
 						<div class="card-body">
 							<h3>ALIMAK SCANDO 650 XL<img src="{{ asset('img/brands/alimak.png') }}" alt="lehner" width="100" height="30"></h3>
-							<p class="card-text">Además, el Alimak Scando 650 FC-S no tiene contrapeso, y puede usar toda la línea de módulos y adiciones disponibles para la familia Alimak Scando 650. Puede entregarse con módulos estándar para adaptarse a todas las exigencias conocidas del proyecto para acceso vertical, desde edificios bajos hasta extremadamente altos.</p>
+							<p class="card-text">El Alimak Scando 650 XL facilita el transporte de elementos de fachada largos u otros materiales voluminosos en la cabina del elevador. Usando un camión montacargas o un tablero de tránsito, la carga o descarga de materiales voluminosos puede hacerse fácilmente y de forma ergonómica.</p>
 						</div>
 					</div>
 				</a>

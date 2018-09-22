@@ -390,12 +390,20 @@ hr[role="back"] {
 	align-items: center;
 	justify-content: center;
 }
+#products-all .title-products {
+	padding: 1rem 0;
+	margin-bottom: .5rem;
+	background-image: url(../img/index/bg-title.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 #products-all .card {
 	border: none;
 }
 #products-all .card-body {
 	background: #abbaab;
-	background: -webkit-linear-gradient(to top, #edeff0, #abbaab);
+	background: -webkit-linear-gradient(to b, #edeff0, #abbaab);
 	background: linear-gradient(to top, #edeff0, #abbaab);
 }
 #products-all .card-body h3 {
@@ -410,30 +418,50 @@ hr[role="back"] {
 	text-align: left !important;
 	color: #000;
 }
-#contact .contact-layer p {
-	margin: 5px 0;
-	padding: 2px 0;
+#contact .container {
+	background: #edeff0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #CDCDCD, #edeff0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #CDCDCD, #edeff0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-		#products-detail {
-			margin: 8rem 0 4rem;
-		}
-		#products-detail h1{
-			font-size: 2.2rem;
-			color: #3d58a1;
-		}
-		#products-detail span {
-			font-size: 1.5rem;
-			color: #000;
-		}
-		#products-detail h3 {
-			color: #777777;
-		}
-		#products-detail p {
-			text-align: left !important;
-		}
-		#products-detail .specification {
-			column-count: 2;
-		}
+#contact .contact-content p {
+	font-size: 1.3rem;
+	margin: 1rem 0;
+	text-align: center !important;
+}
+#products-detail {
+	margin: 8rem 0 4rem;
+}
+#products-detail h1 {
+	font-size: 2.2rem;
+	color: #3d58a1;
+}
+#products-detail span {
+	font-size: 1.5rem;
+	color: #000;
+}
+#products-detail p {
+	text-align: left !important;
+}
+#tabpage {
+	border-bottom: 1px solid #dee2e6;
+	margin: 1rem 0;
+}
+#tabpage .active {
+	color: #000;
+}
+#tabpage .nav-tabs .nav-link.active, #tabpage .nav-tabs .nav-item.show .nav-link {
+	background-color: transparent !important;
+	border: none !important;
+}
+#tabpage .nav-link {
+	display: block;
+	padding: 0.5rem 0;
+	margin-right: 1rem;
+	background-color: inherit;
+	border: none;
+}
+
 @media (min-width: 1050px) {
 #btn-elesud .nav .js-scroll-trigger {
 	margin-left: 65px;
@@ -496,12 +524,13 @@ h2 {
 	max-width: 700px;
 }
 }
-@media (max-width: 650px) {
-	#menu .social  {
-display: none;
 
+@media (max-width: 650px) {
+#menu .social {
+	display: none;
 }
 }
+
 @media (max-width: 991px) {
 p {
 	text-align: center !important;

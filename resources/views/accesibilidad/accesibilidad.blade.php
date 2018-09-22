@@ -1,9 +1,10 @@
 @extends( 'page' )
-@section( 'title' )Accesibilidad@endsection
 @section( 'content' )
 	<div id="products-all" class="container">
-		<h1>Accesibilidad<img class="mx-2" src="{{ asset('img/products/accessibility-black.svg') }}" alt="icon" width="35"></h1>
-		<hr role="sub">
+		<div class="title-products">
+			<h1>Accesibilidad<img class="mx-2" src="{{ asset('img/products/accessibility-black.svg') }}" alt="icon" width="35"></h1>
+			<hr role="sub">
+		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
 				<a href="{{url('/accesibilidad/omega')}}">

@@ -1,5 +1,5 @@
 @extends( 'page' )
-@section( 'title' )Elevadores para Construccion@endsection
+@section( 'title' )Elevadores para Construccion @endsection
 @section( 'content' )
 	<div id="products-detail" class="container mx-auto">
 		<div class="row">
@@ -29,15 +29,23 @@
 			<div class="col-lg-6 py-3">
 				<h1>{{  $product->titulo }}</h1>
 				<span>{{  $product->subtitulo }}</span>
-				<div class="py-4">
-					<p>{!! $product->descripcion !!}</p>
-					<h3>Especificaciones</h3>
-					<div class="specification py-2">
-					{!! $product->especificaciones !!}
+				<ul class="nav nav-tabs" id="tabpage" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#description" role="tab" aria-controls="home" aria-selected="true"><h5>Descripción</h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#specifications" role="tab" aria-controls="profile" aria-selected="false"><h5>Especificaciones</h5></a>
+					</li>
+				</ul>
+				<div class="tab-content" id="tabpage-content">
+					<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="home-tab">
+						{!! $product->descripcion !!}
+					</div>
+					<div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="profile-tab">
+						{!! $product->especificaciones !!}
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 @endsection
