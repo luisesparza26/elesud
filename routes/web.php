@@ -25,20 +25,16 @@ Route::get('/accesibilidad', 'Web\AccesibilidadController@accesibilidad');
 Route::get('/ascensores/{producto}','Web\AscensoresController@show');
 Route::get('/ascensores', 'Web\AscensoresController@ascensores');
 
-//Construccion
+//Elevadores para Construccion
 Route::get('/construccion/{producto}','Web\ConstruccionController@show');
 Route::get('/construccion', 'Web\ConstruccionController@construccion');
 
-//Elevadores
-Route::get('/elevadores/{producto}','Web\ElevadoresController@show');
-Route::get('/elevadores', 'Web\ElevadoresController@elevadores');
-
-//Escaleras
+//Escaleras y rampas
 Route::get('/escaleras/{producto}','Web\EscalerasController@show');
 Route::get('/escaleras', 'Web\EscalerasController@escaleras');
 
 
-//Industrial
+//Ascensores Industriales
 Route::get('/industriales/{producto}','Web\IndustrialController@show');
 Route::get('/industriales', 'Web\IndustrialController@industriales');
 
