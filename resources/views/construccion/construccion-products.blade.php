@@ -1,4 +1,4 @@
-@extends( 'page' )
+@extends( 'pageproduct' )
 @section( 'title' )Elevadores para Construccion @endsection
 @section( 'content' )
 	<div id="products-detail" class="container mx-auto">

@@ -1,4 +1,5 @@
 @extends( 'page' )
+@section( 'title' )Elevadores para Construcción@endsection
 @section( 'content' )
 	<div id="products-all" class="container">
 		<div class="title-products">

@@ -17,6 +17,27 @@
 
 <body>
 	@include ('partials.nav-dark') @yield('content')
+	<section id="contact" class="section-index">
+		<div class="container">
+			<h2>Contáctanos</h2>
+			<hr role="sub">
+			<div class="contact-content row text-center py-5">
+				<div class="col-sm-4">
+					<img class="mr-2" src="{{ asset('img/index/email.svg') }}" alt="icon" width="35">
+					<p>ventas@elesud.com</p>
+				</div>
+				<div class="col-sm-4">
+					<img class="mr-2" src="{{ asset('img/index/phone.svg') }}" alt="icon" width="35">
+					<p>(+51) 975 148 573</p>
+					<p>(+51) 948 582 846</p>
+				</div>
+				<div class="col-sm-4">
+					<img class="mr-2" src="{{ asset('img/index/map.svg') }}" alt="icon" width="35">
+					<p>Víctor Maurtua 166, LIMA 18</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer class="py-3 bg-dark">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright 2018 &copy;Elevadores Sudamericanos S.A.C &#124; Designed by Quickly LA</p>

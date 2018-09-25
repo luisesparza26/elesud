@@ -7,6 +7,7 @@
 	src: url(../fonts/digital.ttf);
 }
 body {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #edeff0;
 	max-width: 1900px;
@@ -64,19 +65,24 @@ hr[role="back"] {
 	margin: 8px;
 	display: block;
 	background-color: #3d58a1;
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 #menu .is-active .line:nth-child(1) {
+	-webkit-transform: translateY(11px) rotate(45deg);
 	transform: translateY(11px) rotate(45deg);
 }
 #menu .is-active .line:nth-child(2) {
 	opacity: 0;
+	-webkit-transform: translateX(40px) !important;
 	transform: translateX(40px) !important;
 }
 #menu .menu:hover .line:nth-child(2) {
+	-webkit-transform: translateX(-5px);
 	transform: translateX(-5px);
 }
 #menu .is-active .line:nth-child(3) {
+	-webkit-transform: translateY(-11px) rotate(-45deg);
 	transform: translateY(-11px) rotate(-45deg);
 }
 #menu .navbar-nav .js-scroll-trigger {
@@ -90,7 +96,11 @@ hr[role="back"] {
 }
 #menu .social p {
 	color: #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	padding: 2px 0;
 	margin: 0;
@@ -99,27 +109,38 @@ hr[role="back"] {
 	font-size: 14px;
 	font-weight: 400;
 	font-family: 'Quicksand', sans-serif;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	color: transparent;
 	text-decoration: none;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin: 1.1rem auto;
 	margin-left: 60px;
 }
 #btn-elesud .nav .js-scroll-trigger:hover {
 	color: #c0bfba;
+	-webkit-transition: .5s;
 	transition: .5s;
 }
 #btn-elesud .nav .js-scroll-trigger::before {
-	content: "" attr(numero)"";
+	content: ""attr(numero)"";
 	font-size: 1.2rem;
 	font-family: 'digital-clock-font';
 	font-weight: 900;
 	letter-spacing: 2px;
 	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	left: 5px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	padding: 5px;
 	width: 45px;
@@ -133,6 +154,7 @@ hr[role="back"] {
 	border-radius: 50%;
 }
 #btn-elesud .js-scroll-trigger:hover:nth-child(2)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(3)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(4)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(5)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(6)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(7)::before, #btn-elesud .js-scroll-trigger:hover:nth-child(8)::before {
+	-webkit-transition: .6s ease-in-out;
 	transition: .6s ease-in-out;
 	color: #3d58a1 !important;
 	border: solid #3d58a1 2px;
@@ -150,7 +172,11 @@ hr[role="back"] {
 	font-family: 'digital-clock-font';
 }
 #index .section-index {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	min-height: 100vh;
 	max-height: 100%;
@@ -201,13 +227,15 @@ hr[role="back"] {
 	min-width: 100%;
 }
 #home .home-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100vh;
 	width: 100vw;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgba(0,0,0,0.78);
+	background-color: rgba(0, 0, 0, 0.78);
 }
 #home h2, #home p {
 	font-family: 'Oswald', sans-serif;
@@ -256,8 +284,13 @@ hr[role="back"] {
 	width: 100%;
 	height: 100%;
 	display: block;
+	-o-object-fit: cover;
 	object-fit: cover;
+	-webkit-transition: -webkit-transform 3s ease;
+	transition: -webkit-transform 3s ease;
 	transition: transform 3s ease;
+	transition: transform 3s ease, -webkit-transform 3s ease;
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	position: relative;
 	z-index: -1;
@@ -270,22 +303,29 @@ hr[role="back"] {
 	width: 100%;
 	color: #FFF;
 	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-transition: background-color 1.5s ease;
 	transition: background-color 1.5s ease;
 }
 #products .card-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	color: #FFF !important;
 	padding: 1rem .5rem;
 	font-size: 1rem;
 	text-transform: uppercase;
 	text-align: right;
+	-webkit-transition: color 1s ease;
 	transition: color 1s ease;
 }
 #products .card-more {
 	max-height: 0;
 	opacity: 0;
 	text-align: right;
+	-webkit-transition: max-height 1.5s ease, opacity 1s ease;
 	transition: max-height 1.5s ease, opacity 1s ease;
 }
 #products .card-more a {
@@ -305,6 +345,7 @@ hr[role="back"] {
 	color: #FFF;
 }
 #products .news-card:hover .products-img {
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 	z-index: -1;
 }
@@ -328,19 +369,27 @@ hr[role="back"] {
 	font-size: 1rem;
 }
 #services .card-img-top {
+	-webkit-transition: -webkit-transform 3s ease;
+	transition: -webkit-transform 3s ease;
 	transition: transform 3s ease;
+	transition: transform 3s ease, -webkit-transform 3s ease;
 }
 #services .card-img-top:hover {
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1)
 }
 #services .card-block {
 	padding: 1rem;
 	background: #000000;
-	background: -webkit-linear-gradient(to bottom, #434343, #000000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#434343), to(#000000));
 	background: linear-gradient(to bottom, #434343, #000000);
 }
 #services .card-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 #services .btn-secondary {
@@ -355,7 +404,7 @@ hr[role="back"] {
 	padding: 1.2rem 0;
 	font-weight: 100;
 	background: #0F2027;
-	background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2C5364), color-stop(#203A43), to(#0F2027));
 	background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
 }
 #projects .projects-p ul {
@@ -386,8 +435,17 @@ hr[role="back"] {
 	font-size: 2.5rem;
 	font-weight: 300;
 	padding: 3rem 0 1rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	text-align: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 #products-all .title-products {
@@ -403,13 +461,19 @@ hr[role="back"] {
 }
 #products-all .card-body {
 	background: #abbaab;
-	background: -webkit-linear-gradient(to b, #edeff0, #abbaab);
+	background: -webkit-gradient(linear, left bottom, left top, from(#edeff0), to(#abbaab));
 	background: linear-gradient(to top, #edeff0, #abbaab);
 }
 #products-all .card-body h3 {
 	color: #3d58a1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	text-transform: uppercase;
 }
@@ -419,10 +483,9 @@ hr[role="back"] {
 	color: #000;
 }
 #contact .container {
-	background: #edeff0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #CDCDCD, #edeff0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #CDCDCD, #edeff0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: #edeff0;
+	background: -webkit-gradient(linear, left bottom, left top, from(#CDCDCD), to(#edeff0));
+	background: linear-gradient(to top, #CDCDCD, #edeff0);
 }
 #contact .contact-content p {
 	font-size: 1.3rem;
@@ -460,6 +523,20 @@ background: linear-gradient(to top, #CDCDCD, #edeff0); /* W3C, IE 10+/ Edge, Fir
 	margin-right: 1rem;
 	background-color: inherit;
 	border: none;
+}
+#contact-products {
+	padding: 5px 20px;
+	background: #abbaab;
+	background: -webkit-gradient(linear, left top, left bottom, from(#edeff0), to(#abbaab));
+	background: linear-gradient(to bottom, #edeff0, #abbaab);
+}
+#contact-products h1 {
+	font-size: 2rem;
+	padding-top: 1rem;
+	margin-bottom: 0;
+}
+#contact-products form {
+	padding: 10px;
 }
 
 @media (min-width: 1050px) {

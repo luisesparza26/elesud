@@ -1,4 +1,5 @@
 @extends( 'page' )
+@section( 'title' )Accesibilidad@endsection
 @section( 'content' )
 	<div id="products-all" class="container">
 		<div class="title-products">

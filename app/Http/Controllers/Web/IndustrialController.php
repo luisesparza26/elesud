@@ -28,7 +28,7 @@ class IndustrialController extends Controller {
 			"image" => "#",
 		];
 		
-		$product = Product::where('titulo',$nombre)->first();
+		$product = Product::where('ruta',$nombre)->first();
 
 		return view( 'ascensores-industriales.industriales-products', compact('meta','product'));
 	}

@@ -31,6 +31,7 @@
 				<div class="col-sm-4">
 					<img class="mr-2" src="{{ asset('img/index/phone.svg') }}" alt="icon" width="35">
 					<p>(+51) 975 148 573</p>
+					<p>(+51) 948 582 846</p>
 				</div>
 				<div class="col-sm-4">
 					<img class="mr-2" src="{{ asset('img/index/map.svg') }}" alt="icon" width="35">

@@ -29,7 +29,7 @@ class EscalerasController extends Controller
 			"image" => "#",
 		];
 		
-		$product = Product::where('titulo',$nombre)->first();
+		$product = Product::where('ruta',$nombre)->first();
 
 		return view( 'escaleras-y-rampas.escaleras-products', compact('meta','product'));
 	}
