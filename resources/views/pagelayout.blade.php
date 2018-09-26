@@ -37,7 +37,7 @@
 								</div>
 								<div class="form-group">
 									<div class="col-md-12">
-										<input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+										<input id="lname" name="lname" type="text" placeholder="Apellidos" class="form-control">
 									</div>
 								</div>
 
