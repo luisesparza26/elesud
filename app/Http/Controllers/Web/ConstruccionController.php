@@ -33,4 +33,5 @@ class ConstruccionController extends Controller {
 
 		return view( 'construccion.construccion-products', compact('meta','product'));
 	}
+	
 }

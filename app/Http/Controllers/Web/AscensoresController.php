@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Web;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Product;
+
 class AscensoresController extends Controller {
     
     public function ascensores() {
@@ -28,7 +29,7 @@ class AscensoresController extends Controller {
 			"image" => "#",
 		];
 		
-		$product = Product::where('titulo',$nombre)->first();
+		$product = Product::where('ruta',$nombre)->first();
 
 		return view( 'ascensores.ascensores-products', compact('meta','product'));
 	}

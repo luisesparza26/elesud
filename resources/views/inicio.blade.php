@@ -156,7 +156,7 @@
 						<div class="card pb-2 my-3 wow slideInRight">
 							<img class="card-img-top" src="{{ asset('img/services/instalacion.jpg') }}" alt="instalacion">
 							<div class="card-block">
-								<h4 class="card-title"><img class="mr-2" src="{{ asset('img/services/01.svg') }}" alt="icon" width="30">Intalación</h4>
+								<h4 class="card-title"><img class="mr-2" src="{{ asset('img/services/01.svg') }}" alt="icon" width="30">Instalación</h4>
 								<hr role="back">
 								<p class="card-text py-3">Contamos con personal técnico altamente capacitado para estos trabajos, respetando las Normas de Seguridad y Salud en el trabajo nacionales <b>Norma-G-050 e Internacionales (OSHAS 18001)</b>.</p>
 								<div class="text-right content-btn">
