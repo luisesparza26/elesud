@@ -133,7 +133,7 @@
 									<hr role="back">
 									<p class="card-text py-3">El mantenimiento preventivo de los elevadores se realizará en las visitas periódicas y consistirá en la verificación metódica de la instalación eléctrica y órganos mecánicos con el fin de ajustar, reparar o sustituir piezas antes de que su estado pueda ocasionar averías o anormalidades en el funcionamiento.</p>
 									<div class="text-right content-btn">
-										<a href="#" class="btn btn-secondary">Solicitar cotización</a>
+										<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalservicespreventivo">Solicitar visita técnica</button>
 									</div>
 								</div>
 							</div>
@@ -146,7 +146,7 @@
 									<hr role="back">
 									<p class="card-text py-3">Confía tu equipo en manos de expertos; contamos con técnicos especializados y atención de emergencias los 365 días del año, 24 horas al día. Ofrecemos contratos de mantenimiento a tu necesidad, estos están diseñados para satisfacer las diversas necesidades de nuestros clientes.</p>
 									<div class="text-right content-btn">
-										<a href="#" class="btn btn-secondary">Contácta un especialista</a>
+										<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalservicescorrectivo">Contácta un especialista</button>
 									</div>
 								</div>
 							</div>
@@ -160,7 +160,7 @@
 								<hr role="back">
 								<p class="card-text py-3">Contamos con personal técnico altamente capacitado para estos trabajos, respetando las Normas de Seguridad y Salud en el trabajo nacionales <b>Norma-G-050 e Internacionales (OSHAS 18001)</b>.</p>
 								<div class="text-right content-btn">
-									<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Solicitar cotización</button>
+									<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalservices">Solicitar cotización</button>
 								</div>
 							</div>
 						</div>
@@ -170,9 +170,6 @@
 								<h4 class="card-title"><img class="mr-2" src="{{ asset('img/services/02.svg') }}" alt="icon" width="30">Modernización</h4>
 								<hr role="back">
 								<p class="card-text py-3">Modernización es sinónimo de vanguardia, seguridad y comodidad, cuando usted decide hacer una modernización está protegiendo su inversión a largo plazo y garantiza un buen funcionamiento de su equipo para los usuarios, modernizar parcialmente o realizar una sustitución completa es posible con Elevadores Sudamericanos.</p>
-								<div class="text-right content-btn">
-									<a href="#" class="btn btn-secondary">Solicitar cotización</a>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -239,54 +236,119 @@
 		</section>
 	</div>
 
-	<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Solicitar Cotización</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<!-- Modal -->
+<div class="modal fade" id="modalservicespreventivo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalserviceslabel">Solicitar visita técnica</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-       <div id="contact-products">
-	<form action="{{route('instalacion')}}" method="POST">
-		{{ csrf_field() }}
-		<div class="row form-group">
-			<div class="col-sm-6">
-				<input type="text" class="form-control" name="nombre" placeholder="Nombre">
 			</div>
-			<div class="col-sm-6">
-				<input type="text" name="apellido" class="form-control" placeholder="Apellido">
+			<div class="modal-body">
+				<p>Solicita una visita técnica de nuestros especialistas y obtén el mejor precio del mercado.</p>
+				<form>
+					<div class="row form-group mb-2">
+						<div class="col-sm-6">
+							<input type="text" class="form-control" name="nombre" placeholder="Nombre">
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="apellido" class="form-control" placeholder="Apellido">
+						</div>
+					</div>
+					<div class="row form-group mb-2">
+						<div class="col-sm-6">
+							<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="email" class="form-control" placeholder="Correo">
+						</div>
+					</div>
+					<div class="row form-group mb-2">
+						<div class="col-sm-6">
+							<input type="text" class="form-control" name="adress" placeholder="Dirección">
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="ref" class="form-control" placeholder="Referencia">
+						</div>
+					</div>
+					<div class="form-group my-1">
+						<textarea class="form-control mb-1" id="message" name="mensaje" rows="3"></textarea>
+					</div>
+					<button class="w-100 btn btn-secondary">Solicitar</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 			</div>
 		</div>
-		<div class="row form-group">
-			<div class="col-sm-6">
-				<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
-			</div>
-			<div class="col-sm-6">
-				<input type="text" name="email" class="form-control" placeholder="Correo">
-			</div>
-		</div>
-		<div class="row form-group">
-			<div class="col-sm-12">
-				    <input type="file" name="file" id="file" class="w-100 btn btn-secondary">
-				<p class="py-2">*Adjuntar planos de la edificación</p>
-			</div>
-		</div>
-		
-		<div class="form-group">
-			<textarea class="form-control" id="message" name="mensaje" rows="3"></textarea>
-		</div>
-		<button type="submit" class="w-100 btn btn-primary">Solicitar</button>
-	</form>
+	</div>
 </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
+<div class="modal fade" id="modalservicescorrectivo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body row justify-content-around mt-3">
+				<p><a href="https://api.whatsapp.com/send?phone=975148573&text=Hola, estoy interesado en sus servicios y productos" target="_blank"><img class="mr-2" src="{{ asset('img/social/whatsapp.svg') }}" alt="wp" width="25"></a>(+51) 975 148 573</p>
+				<p>aescalante@elesud.com</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="modalservices" tabindex="-1" role="dialog" aria-labelledby="modalserviceslabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalserviceslabel">Solicitar Cotización</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+			
+
+
+			</div>
+			<div class="modal-body">
+				<div id="contact-products">
+					<form action="{{route('instalacion')}}" method="POST">
+						{{ csrf_field() }}
+						<p>Realiza tu cotización, envíanos los planos de tu proyecto y un asesor se pondrá en contácto en breve.</p>
+						<div class="row form-group mb-2">
+							<div class="col-sm-6">
+								<input type="text" class="form-control" name="nombre" placeholder="Nombre">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="apellido" class="form-control" placeholder="Apellido">
+							</div>
+						</div>
+						<div class="row form-group mb-2">
+							<div class="col-sm-6">
+								<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="email" class="form-control" placeholder="Correo">
+							</div>
+						</div>
+						<div class="row form-group my-3">
+							<div class="col-sm-12">
+								<input type="file" name="file" id="file">
+								<p class="mt-2">*Adjuntar planos de la edificación</p>
+							</div>
+						</div>
+
+						<div class="form-group mb-1">
+							<textarea class="form-control mb-1" id="message" name="mensaje" rows="3"></textarea>
+						</div>
+						<button type="submit" class="w-100 btn btn-secondary">Solicitar</button>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
 </div>
 @endsection

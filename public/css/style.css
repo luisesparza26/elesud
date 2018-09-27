@@ -538,7 +538,10 @@ hr[role="back"] {
 #contact-products form {
 	padding: 10px;
 }
-
+#modalservices h5{
+	font-size: 2rem;
+	color: #3d58a1;
+}
 @media (min-width: 1050px) {
 #btn-elesud .nav .js-scroll-trigger {
 	margin-left: 65px;

@@ -14,7 +14,7 @@
 						<img class="card-img-top" src="{{ asset('img/products-all/escaleras/escalera-mecanica.jpg') }}" alt="koyo">
 						<div class="card-body">
 							<h3>Escalera mecánica<img src="{{ asset('img/brands/koyo.png') }}" alt="lehner" width="100" height="30"></h3>
-							<p class="card-text">Escalera mecánica KOYO con una fuerte fuerza de seguridad, que lleva la responsabilidad del usuario, el propósito de los pasajeros en el camino en la carretera para proporcionar una estancia corta y acogedora.</p>
+							<p class="card-text">La escalera eléctrica de KOYO, manteniendo su compromiso con el usuario, cuenta con una fuerte seguridad, diseñada únicamente para proporcionar una cómoda estancia a los pasajeros.</p>
 						</div>
 					</div>
 				</a>
@@ -25,7 +25,7 @@
 						<img class="card-img-top" src="{{ asset('img/products-all/escaleras/elevador-autos.jpg') }}" alt="koyo">
 						<div class="card-body">
 							<h3>Elevador de autos<img src="{{ asset('img/brands/koyo.png') }}" alt="lehner" width="100" height="30"></h3>
-							<p class="card-text">KOYO garaje de estacionamiento tridimensional es un equipo de estacionamiento de cambio de elevación. El sistema de elevación y conducción es un sistema de suspensión de cable de cuatro puntos, que es estable y confiable en su funcionamiento. </p>
+							<p class="card-text">Una herramienta importante de transporte vertical de automóviles que puede ahorrar hasta un 80% de espacio de construcción y duplicar la eficiencia de regreso de los mismos.</p>
 						</div>
 					</div>
 				</a>
@@ -36,7 +36,7 @@
 						<img class="card-img-top" src="{{ asset('img/products-all/escaleras/pasarela.jpg') }}" alt="koyo">
 						<div class="card-body">
 							<h3>Pasarelas móviles<img src="{{ asset('img/brands/koyo.png') }}" alt="lehner" width="100" height="30"></h3>
-							<p class="card-text">La serie KOYO pasarelas móviles, de 0 grados a 12 grados y otras especificaciones y estilos para que los usuarios elijan, se usan ampliamente en los principales centros comerciales, estaciones de ferrocarril, terminales, terminales, centros comerciales, centros de entretenimiento, salas de exposiciones y otros lugares públicos.</p>
+							<p class="card-text">La serie KOYO ofrece diversas especificaciones y modelos para que el cliente elija, ampliamente recomendado para ser utilizado en los principales centros comerciales, centros recreativos, aeropuertos, salas de exposiciones y otros espacios públicos.</p>
 						</div>
 					</div>
 				</a>

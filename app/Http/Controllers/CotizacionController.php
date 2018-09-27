@@ -62,7 +62,7 @@ class CotizacionController extends Controller {
 		} catch ( Exception $e ) {
 			return $e;
 		}
-		return redirect()->route( 'inicio' )->with( 'info', 'Mensaje enviado con exito' );
+		return 'Enviado con exito';
 	}
 
 	public
@@ -70,11 +70,9 @@ class CotizacionController extends Controller {
 
 		//$filePath = $this->upload($request->file('file'));
 
-
 		$campo = $request->all();
 
-		dd( $filePath );
-
+//		dd( $filePath );
 
 		//dd($campo);
 		$mail = new PHPMailer;
@@ -109,15 +107,10 @@ class CotizacionController extends Controller {
 						</head>
 						<body>
 						    <span>Información</span>
-						    <br>
 						    <p><b>Nombre: </b>' . ( $campo[ 'nombre' ] != null ? $campo[ 'nombre' ] : '' ) . '</p>
-						    <br>
 						    <p><b>Apellido:</b> ' . ( $campo[ 'apellido' ] != null ? $campo[ 'apellido' ] : '' ) . '</p>
-						    <br>
 						    <p><b>Telefono:</b>  ' . ( $campo[ 'email' ] != null ? $campo[ 'email' ] : '' ) . '</p>
-						    <br>
 						    <p><b>Correo:</b>  ' . ( $campo[ 'phone' ] != null ? $campo[ 'phone' ] : '' ) . '</p>
-						    <br>
 						    <p><b>Mensaje:</b> ' . ( $campo[ 'mensaje' ] != null ? $campo[ 'mensaje' ] : '' ) . '</p>
 						    <br>
 						</body>

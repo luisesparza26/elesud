@@ -53,8 +53,6 @@ class ContactController extends Controller {
 						    <p><b>Mensaje:</b> ' . ( $campo[ 'message' ] != null ? $campo[ 'message' ] : '' ) . '</p>
 						</body>
 						</html>';
-
-
 			$mail->send();
 		} catch ( phpmailerException $e ) {
 			return $e;

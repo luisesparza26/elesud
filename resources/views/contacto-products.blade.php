@@ -12,7 +12,7 @@
 		</div>
 		<div class="row form-group">
 			<div class="col-sm-6">
-				<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
+				<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{8}">
 			</div>
 			<div class="col-sm-6">
 				<input type="text" name="email" class="form-control" placeholder="Correo">
