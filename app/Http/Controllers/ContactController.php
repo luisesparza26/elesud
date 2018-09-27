@@ -36,7 +36,27 @@ class ContactController extends Controller {
         
         $mail->IsHTML(TRUE);
     
-        $mail->Body = "<b>Prueba</b>".$campo['name']." ". $campo['lname']. ' '.$campo['email'].' '.$campo['phone'].' '.$campo['message'];
+        $mail->Body = '<!DOCTYPE html>
+						<html lang="en">
+						<head>
+						    <meta charset="UTF-8">
+						    <title>Información</title>
+						</head>
+						<body>
+						    <span>Informacion</span>
+						    <br>
+						    <p><b>Nombre: </b>'.($campo['name']!= null?$campo['name']:'').'</p>
+						    <br>
+						    <p><b>Apellido:</b> '. ($campo['lname'] != null?$campo['lname']:'').'</p>
+						    <br>
+						    <p><b>Telefono:</b>  '.($campo['email']!=null?$campo['email']:'').'</p>
+						    <br>
+						    <p><b>Correo:</b>  '.($campo['phone']!= null?$campo['phone']:'').'</p>
+						    <br>
+						    <p><b>Mensaje:</b> '.($campo['message']!=null?$campo['message']:'').'</p>
+						    <br>
+						</body>
+						</html>';
 
 		
 
