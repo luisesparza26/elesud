@@ -253,7 +253,6 @@
        <div id="contact-products">
 	<form action="{{route('instalacion')}}" method="POST">
 		{{ csrf_field() }}
-		<h1 class="py-3">Solicitar cotización</h1>
 		<div class="row form-group">
 			<div class="col-sm-6">
 				<input type="text" class="form-control" name="nombre" placeholder="Nombre">
@@ -272,7 +271,8 @@
 		</div>
 		<div class="row form-group">
 			<div class="col-sm-12">
-				    <input type="file" name="file" id="file" class="btn btn-secondary">
+				    <input type="file" name="file" id="file" class="w-100 btn btn-secondary">
+				<p class="py-2">*Adjuntar planos de la edificación</p>
 			</div>
 		</div>
 		
@@ -284,7 +284,7 @@
 </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
