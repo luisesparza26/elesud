@@ -160,7 +160,7 @@
 								<hr role="back">
 								<p class="card-text py-3">Contamos con personal técnico altamente capacitado para estos trabajos, respetando las Normas de Seguridad y Salud en el trabajo nacionales <b>Norma-G-050 e Internacionales (OSHAS 18001)</b>.</p>
 								<div class="text-right content-btn">
-									<a href="#" class="btn btn-secondary">Solicitar cotización</a>
+									<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Solicitar cotización</button>
 								</div>
 							</div>
 						</div>
@@ -238,4 +238,55 @@
 			</div>
 		</section>
 	</div>
+
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Solicitar Cotización</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div id="contact-products">
+	<form action="{{route('instalacion')}}" method="POST">
+		{{ csrf_field() }}
+		<h1 class="py-3">Solicitar cotización</h1>
+		<div class="row form-group">
+			<div class="col-sm-6">
+				<input type="text" class="form-control" name="nombre" placeholder="Nombre">
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="apellido" class="form-control" placeholder="Apellido">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-sm-6">
+				<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="email" class="form-control" placeholder="Correo">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-sm-12">
+				    <input type="file" name="file" id="file" class="btn btn-secondary">
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<textarea class="form-control" id="message" name="mensaje" rows="3"></textarea>
+		</div>
+		<button type="submit" class="w-100 btn btn-primary">Solicitar</button>
+	</form>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 @endsection

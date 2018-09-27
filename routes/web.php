@@ -14,8 +14,15 @@
 //Contacto
 Route::post('/contacto','ContactController@contact')->name('contact');
 
+//Cotizacion
+Route::post('/cotizar','CotizacionController@cotizar')->name('cotizacion');
+
+//Cotizar Instalacion cotizarInstalacion
+Route::post('/cotizarInstalacion','CotizacionController@cotizarInstalacion')->name('instalacion');
+
+
 //Rutas Principales
-Route::get('/', 'Web\PageController@inicio');
+Route::get('/', 'Web\PageController@inicio')->name('inicio');
 
 //Accesibilidad
 Route::get('/accesibilidad/{producto}','Web\AccesibilidadController@show');
