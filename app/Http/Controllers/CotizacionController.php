@@ -11,6 +11,7 @@ class CotizacionController extends Controller {
     public function cotizar(Request $request){
     	$campo= $request->all();
 
+
     	//dd($campo);
     	$mail = new PHPMailer;
 		// notice the \ you have to use root namespace here

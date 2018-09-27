@@ -20,10 +20,12 @@
 		</div>
 		<div class="row form-group">
 			<div class="col-sm-6">
-					<input type="text" class="form-control" name="categoria" value="{{$categoria}}" disabled>
+					<input type="text" class="form-control" name="category" value="{{$categoria}}" disabled>
+					<input type="hidden" class="form-control" name="categoria" value="{{$categoria}}">
 				</div>
 			<div class="col-sm-6">
-				<input type="text" class="form-control" name="producto" value="{{$producto}}" disabled>
+				<input type="text" class="form-control" name="product" value="{{$producto}}" disabled>
+				<input type="hidden" class="form-control" name="producto" value="{{$producto}}">
 			</div>
 		</div>
 
