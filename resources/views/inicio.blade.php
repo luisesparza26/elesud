@@ -248,10 +248,11 @@
 			</div>
 			<div class="modal-body">
 				<p>Solicita una visita técnica de nuestros especialistas y obtén el mejor precio del mercado.</p>
-				<form>
+				<form action="{{ route('preventivo') }}" method="POST">
+					{{ csrf_field() }}
 					<div class="row form-group mb-2">
 						<div class="col-sm-6">
-							<input type="text" class="form-control" name="nombre" placeholder="Nombre">
+							<input type="text" class="form-control" name="nombre" required placeholder="Nombre">
 						</div>
 						<div class="col-sm-6">
 							<input type="text" name="apellido" class="form-control" placeholder="Apellido">
@@ -259,22 +260,22 @@
 					</div>
 					<div class="row form-group mb-2">
 						<div class="col-sm-6">
-							<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
+							<input type="tel" class="form-control" name="phone" required placeholder="Teléfono" pattern="[0-9]{10}">
 						</div>
 						<div class="col-sm-6">
-							<input type="text" name="email" class="form-control" placeholder="Correo">
+							<input type="text" name="email" class="form-control" required placeholder="Correo">
 						</div>
 					</div>
 					<div class="row form-group mb-2">
 						<div class="col-sm-6">
-							<input type="text" class="form-control" name="adress" placeholder="Dirección">
+							<input type="text" class="form-control" name="address" required placeholder="Dirección">
 						</div>
 						<div class="col-sm-6">
 							<input type="text" name="ref" class="form-control" placeholder="Referencia">
 						</div>
 					</div>
 					<div class="form-group my-1">
-						<textarea class="form-control mb-1" id="message" name="mensaje" rows="3"></textarea>
+						<textarea class="form-control mb-1" id="message" required name="mensaje" rows="3"></textarea>
 					</div>
 					<button class="w-100 btn btn-secondary">Solicitar</button>
 				</form>
@@ -312,12 +313,12 @@
 			</div>
 			<div class="modal-body">
 				<div id="contact-products">
-					<form action="{{route('instalacion')}}" method="POST">
+					<form action="{{route('instalacion')}}" method="POST" enctype="multipart/form-data">
 						{{ csrf_field() }}
 						<p>Realiza tu cotización, envíanos los planos de tu proyecto y un asesor se pondrá en contácto en breve.</p>
 						<div class="row form-group mb-2">
 							<div class="col-sm-6">
-								<input type="text" class="form-control" name="nombre" placeholder="Nombre">
+								<input type="text" class="form-control" required name="nombre" placeholder="Nombre">
 							</div>
 							<div class="col-sm-6">
 								<input type="text" name="apellido" class="form-control" placeholder="Apellido">
@@ -325,10 +326,10 @@
 						</div>
 						<div class="row form-group mb-2">
 							<div class="col-sm-6">
-								<input type="tel" class="form-control" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
+								<input type="tel" class="form-control" required name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
 							</div>
 							<div class="col-sm-6">
-								<input type="text" name="email" class="form-control" placeholder="Correo">
+								<input type="text" name="email" required class="form-control" placeholder="Correo">
 							</div>
 						</div>
 						<div class="row form-group my-3">
@@ -339,7 +340,7 @@
 						</div>
 
 						<div class="form-group mb-1">
-							<textarea class="form-control mb-1" id="message" name="mensaje" rows="3"></textarea>
+							<textarea class="form-control mb-1" id="message" required name="mensaje" rows="3"></textarea>
 						</div>
 						<button type="submit" class="w-100 btn btn-secondary">Solicitar</button>
 					</form>

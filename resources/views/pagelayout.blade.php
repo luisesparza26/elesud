@@ -46,7 +46,7 @@
 							<fieldset>
 								<div class="form-group">
 									<div class="col-md-12">
-										<input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+										<input id="fname" name="name" type="text" required placeholder="Nombre" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
@@ -57,19 +57,19 @@
 
 								<div class="form-group">
 									<div class="col-md-12">
-										<input id="email" name="email" type="text" placeholder="Correo" class="form-control">
+										<input id="email" name="email" type="text" required placeholder="Correo" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group">
 									<div class="col-md-12">
-										<input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+										<input id="phone" name="phone" type="text" required placeholder="Teléfono" class="form-control">
 									</div>
 								</div>
 
 								<div class="form-group">
 									<div class="col-md-12">
-										<textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje." rows="7"></textarea>
+										<textarea class="form-control" id="message" required name="message" placeholder="Escribe tu mensaje." rows="7"></textarea>
 									</div>
 								</div>
 
@@ -101,6 +101,10 @@
 			<p class="m-0 text-center text-white">Copyright 2018 &copy;Elevadores Sudamericanos S.A.C &#124; Designed by Quickly LA</p>
 		</div>
 	</footer>
+
+
+
+
 	<script src="{{ asset('js/jquery.js') }}"></script>
 	<script src="{{ asset('js/scroll.js') }}"></script>
 	<script src="{{ asset('js/main.js') }}"></script>
@@ -110,6 +114,34 @@
 		new WOW().init();
 	</script>
 
+@if( Session::has('status'))
+   <script type="text/javascript">
+      $(document).ready(function() {
+        $('#popupmodal').modal();
+      });
+   </script>
+
+	<!-- Modal -->
+<div class="modal fade" id="popupmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Notificación</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         {{ Session::get('status') }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@endif
 </body>
 
 </html>

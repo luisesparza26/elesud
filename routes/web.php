@@ -17,6 +17,10 @@ Route::post('/contacto','ContactController@contact')->name('contact');
 //Cotizacion
 Route::post('/cotizar','CotizacionController@cotizar')->name('cotizacion');
 
+//Mantenmiento Contacto
+Route::post('/preventivo','CotizacionController@preventivo')->name('preventivo');
+
+
 //Cotizar Instalacion cotizarInstalacion
 Route::post('/cotizarInstalacion','CotizacionController@cotizarInstalacion')->name('instalacion');
 

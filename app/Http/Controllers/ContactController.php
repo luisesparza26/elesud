@@ -30,11 +30,10 @@ class ContactController extends Controller {
 			$mail->From = "contacto@elesud.com";
 			$mail->FromName = "Elevadores Sudamericanos Contacto";
 
-			$mail->Subject = "Solicitud de Informacion";
+			$mail->Subject = "Solicitud de Información";
 			$mail->WordWrap = 50;
 
 			$mail->AddAddress( "eric@juliochirinos.com" );
-			$mail->AddBCC( "ep.luisjesus@gmail.com" );
 
 			$mail->IsHTML( TRUE );
 
@@ -59,7 +58,7 @@ class ContactController extends Controller {
 		} catch ( Exception $e ) {
 			return $e;
 		}
-		return 'Enviado con exito';
+		return redirect()->back()->with('status','¡Mensaje enviado con éxito!');
 	}
 
 }
